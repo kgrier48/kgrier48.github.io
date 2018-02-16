@@ -2,105 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ken Grier</title>
-<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="css/main.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="col-md-6 col-xs-12">
-   <div class="col-md-8 col-md-offset-2 col-xs-10 col-sm-offset-1">
-    <h1>Ken Grier</h1>
-        <h3>Designer, Illustrator, UI/UX geek, Typography nerd, Rock climber, and beer enthusiast.</h3>
-	</div>
-</div>
-<div class="col-md-12" style="padding:0px; position:absolute; z-index:-1;">
-    <canvas style="width:100%; height:100%;" id="hello"></canvas>
-</div>
-
-<script>
-let width = window.innerWidth;
-let height = window.innerHeight;
-
-let pixels = [];
-const size = 6;
-let columns;
-let rows;
-
-const canvas = document.querySelector('#hello');
-const ctx = canvas.getContext('2d');
-canvas.width = width;
-canvas.height = height;
-
-class Pixel {
-  constructor (x, y) {
-    this.x = x * size;
-    this.y = y * size;
-    this.x1 = this.x * 0.001;
-    this.y1 = this.y * 0.001;
-    this.color = '#' + (Math.floor(Math.random() * (255 * 255 * 255)).toString(16));
-  }
-  
-  updateColor () {
-    const ratio = Math.floor(Math.abs(noise.simplex3(this.x1, this.y1, time)) * 8) * 31;
-    this.color = 'rgb(' + Math.floor(ratio * currentColor) + ',' + Math.floor(ratio) + ',' + Math.floor(ratio) + ')';
-  }
-  
-  draw () {
-    ctx.fillStyle = this.color;
-    ctx.beginPath();
-    ctx.rect(this.x, this.y, size, size);
-    ctx.fill();
-  }
-}
-
-for (var y = 0; y < rows; y++) {
-  for (var x = 0; x < columns; x++) {
-    pixels.push(new Pixel(x, y));
-  }
-}
-
-let time = 0;
-let currentColor = 0;
-function render (delta) {
-  requestAnimationFrame(render);
-  
-  time = delta * 0.0001;
-  currentColor = Math.abs(noise.simplex2(time, 0));
-  
-  ctx.clearRect(0, 0, width, height);
-  pixels.forEach((pixel) => {
-    pixel.updateColor();
-    pixel.draw();
-  });
-}
-
-window.addEventListener('resize', onResize);
-
-function onResize () {
-  width = window.innerWidth;
-  height = window.innerHeight;
-
-  canvas.width = width;
-  canvas.height = height;
-  
-  columns = Math.ceil(width / size) ;
-  rows = Math.ceil(height / size) ;
-  
-  pixels = [];
-  for (var y = 0; y < rows; y++) {
-    for (var x = 0; x < columns; x++) {
-      pixels.push(new Pixel(x, y));
-    }
-  }
-}
-onResize();
-requestAnimationFrame(render);	
-	
-	
-</script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/perlin.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<section class="section">
+    <h1 class="title">Ken Grier</h1>
+    <h3 class="subtitle">Designer, Illustrator, UI/UX geek, Typography nerd, Rock climber, and beer enthusiast.</h3>
+</section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 
 </html>
