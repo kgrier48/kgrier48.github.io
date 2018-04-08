@@ -204,8 +204,8 @@ pre {
 
 html{
 	background: #262626;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #262626, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #262626, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to right, #262626, #222222);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #262626, #222222); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
