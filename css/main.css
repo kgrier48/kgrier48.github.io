@@ -2677,7 +2677,8 @@ a.box:active {
 .content h3,
 .content h4,
 .content h5,
-.content h6 {
+.content h6,
+.title{
 	font-family: 'Montserrat', sans-serif;
   color: #363636;
   font-weight: 400;
