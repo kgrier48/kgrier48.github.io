@@ -51,29 +51,12 @@
 	position: relative;
 	margin: 5vh;
 	height: 90vh;
-	border-left: 9px solid #38ef7d;}
-
-
-	.intro:before, .intro:after {
-	  content: "";
-	  position: absolute;
-	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(##38ef7d), to(transparent));
-	  background-image: -webkit-linear-gradient(#38ef7d, transparent);
-	  background-image: -moz-linear-gradient(#38ef7d, transparent);
-	  background-image: -o-linear-gradient(#38ef7d, transparent);
-	  background-image: linear-gradient(#38ef7d, transparent);
-	  top: -3px;
-	  bottom: -3px;
-	  width: 3px;
-	}
-	.intro:before {
-	  left: -3px;
-	}
-	.intro:after {
-	  right: -3px;
-	}
-
+	border: 9px solid transparent;
+	border-image: linear-gradient(135deg, #38ef7d, transparent) 1;
 }
+
+
+
 
 
 
