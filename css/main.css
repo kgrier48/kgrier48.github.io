@@ -52,7 +52,12 @@
 	margin: 5vh;
 	height: 90vh;
 	border: 9px solid transparent;
-	border-image: linear-gradient(135deg, #38ef7d, transparent) 1;
+	border-image: linear-gradient(90deg, #38ef7d, transparent) 1;
+}
+
+.intro h2{
+	font-size: 9rem;
+	color: #ffffff;
 }
 
 
