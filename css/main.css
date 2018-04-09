@@ -49,6 +49,8 @@
 .intro{
 	z-index: 1;
 	position: relative;
+	margin: 5vh;
+	height: 90vh;
 
  border-top: 9px solid #38ef7d;
  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#38ef7d), to(transparent));
