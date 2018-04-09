@@ -61,6 +61,14 @@
 }
 
 
+@media screen and (max-width: 768px){
+
+.intro h2{
+	font-size: 4rem;
+	color: #ffffff;
+}
+}
+
 
 
 
