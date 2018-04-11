@@ -62,10 +62,10 @@
 
 html{
 	background: url(/img/dunmore.jpg) no-repeat center center fixed !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;}
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;}
 
 @media screen and (max-width: 768px){
 
