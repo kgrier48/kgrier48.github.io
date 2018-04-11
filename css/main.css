@@ -49,15 +49,24 @@
 .intro{
 	z-index: 1;
 	position: relative;
-	margin: 25vh 5vh;
+	margin: 33vh 5vh 0vh;
 	height: 50vh;
 /* border: 9px solid transparent;
 	border-image: linear-gradient(90deg, #38ef7d, transparent) 1; */
 }
 
 .intro h2{
-	font-size: 9rem;
+	font-size: 22rem;
 	color: #ffffff;
+	text-align: center;
+}
+
+h6{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
 }
 
 html{
@@ -72,9 +81,14 @@ html{
 @media screen and (max-width: 768px){
 
 .intro h2{
-	font-size: 4rem;
+	font-size: 8rem;
 	color: #ffffff;
 }
+
+h6{
+	font-size: 1rem;
+}
+
 }
 
 
