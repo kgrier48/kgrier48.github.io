@@ -61,10 +61,11 @@
 }
 
 html{
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+	background: url(/img/dunmore.jpg) no-repeat center center fixed !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
 
 @media screen and (max-width: 768px){
 
