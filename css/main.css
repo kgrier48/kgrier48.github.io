@@ -61,7 +61,15 @@
 	text-align: center;
 }
 
-h6{
+.intro h3{
+	font-size: 2em;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.intro h6{
     text-align: center;
     color: #ffffff;
     font-size: 2rem;
