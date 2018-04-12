@@ -84,12 +84,12 @@
     color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
-		margin-top: 1vh;
+		margin-top: .5vh;
 		font-family: 'Montserrat', 'Montserrat Alt', sans-serif;
 }
 
 
-.intro h6 .button{
+.intro .button{
 		background-color: lawngreen;
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
