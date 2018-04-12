@@ -96,6 +96,8 @@
     border-radius: 50px;
     margin: auto;
     display: block;
+		padding: 15px;
+		height: auto;
     position: relative;
     max-width: 260px;
     margin-top: 5vh;
