@@ -88,6 +88,19 @@
 }
 
 
+.intro h6 .button{
+		background-color: lawngreen;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    position: relative;
+    max-width: 260px;
+    margin-top: 5vh;
+    border: 0px;
+}
+
 
 html{
 	background: url(/img/Ken_Rev.jpg) no-repeat center center fixed !important;
