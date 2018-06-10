@@ -1,0 +1,73 @@
+
+body{background-color: #000000;
+background: repeating-linear-gradient(
+    to right,
+    #0d0d0d,
+    #0d0d0d 1px,
+    #000000 1px,
+    #000000 33%
+  );}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.row.slide{
+  height:105vh;
+}
+
+.header{
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  vertical-align:middle;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 6rem;
+}
+
+.numbers{font-family: 'Baskerville Libre';
+          font-weight: bold;
+        letter-spacing: .1em;}
+
+.whiteout{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.js-emailcopybtn{background:none; color: #fff; border: none; font-weight: bold;}
+
+.infobar a, .infobar{text-decoration: none; color: #ffffff; font-size: .8rem; font-weight: bold;}
+.infobar .info{color:#ceff1a;}
+
+.click-scroll-btn{
+  position: absolute;
+  top: 80%;
+  right: 0px;
+  width: 33%;
+}
+
+.click-scroll-btn .special-btn {
+
+  margin: auto;
+  background: transparent;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1em;
+}
+
+.click-scroll-btn .special-btn img{margin: 0rem 1rem;}
+
+ .outline-header{
+  z-index: 1;
+  font-size: 20rem;
+  line-height: 0;
+  color: #000000;
+  opacity: .15;
+  text-transform: uppercase;
+  text-shadow:-1px -1px 0 #eee, 1px -1px 0 #eee, -1px 1px 0 #eee, 1px 1px 0 #eee;
+}
+
+.btn { font-family: 'Lato', sans-serif; font-size: 1.4rem; letter-spacing: .01rem; text-transform: uppercase;}
+.btn-primary {padding: 15px; background-color: #fff; border-radius: 30px; color: #000010;}
