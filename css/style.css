@@ -78,11 +78,11 @@ h2.subtitle, span.subtitle, .navbar-item, h4, footer .level-item{
 }
 
 .client span{
-  font-size: 14px;
+  font-size: 12px;
   color: #03de0b;
   text-transform: uppercase;
-  letter-spacing: .1em;
-  font-weight: 400;
+  letter-spacing: 2px;
+  font-weight: 300;
   opacity: 0;
   text-shadow: none;
   top: 0px;
@@ -93,15 +93,6 @@ h2.subtitle, span.subtitle, .navbar-item, h4, footer .level-item{
   opacity: .2;
 }
 
-.btn{
-  color: white;
-  border: 2px solid #03DE0B;
-  padding: 15px 30px;
-}
-
-.my-5{
-  margin: 50px auto !important;
-}
 
 .vert-text.left{
   position: absolute;
@@ -124,37 +115,83 @@ h2.subtitle, span.subtitle, .navbar-item, h4, footer .level-item{
   text-shadow: -1px 0 #03DE0B, 0 1px #03DE0B, 1px 0 #03DE0B, 0 -1px #03DE0B;
 }
 
-.form .field .control textarea, .form .field .control input{
-  background: none;
-  border: 1px solid #03DE0B;
-}
-  
-.form{
-  width: 80%;
-  max-width: 720px;
-  margin: auto;
-} 
 
-label{
-  color: white !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 15px auto;
-  font-weight: 400 !important;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px !important;
-}
-
-.field.submit{
-  margin: 50px auto;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-footer{
-  padding: 100px auto;
-}
 
 .hero{
   min-height: 100vh;
+}
+
+
+
+
+
+/*----- BOOTSTRAP 4 -----*/
+
+.text-white{
+  color: #ffffff;
+}
+
+.text-green{
+  color: #03de0b;
+}
+
+h1{
+  color: #0D0E27;
+  font-size: 82px;
+  letter-spacing: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: -1px 0 #03DE0B, 0 1px #03DE0B, 1px 0 #03DE0B, 0 -1px #03DE0B;
+}
+
+h4, .client span{
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #03DE0B;
+  text-transform: uppercase;
+  font-family: 'Montserrart', sans-serif;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+.btn-primary{
+  color: white;
+  background: transparent;
+  border: 2px solid #03DE0B;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  transition: all 100ms ease-in;
+}
+
+.btn-primary:hover{
+  background: #03DE0B;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid #03DE0B;
+  color: #0D0E27;
+}
+
+.btn-secondary{
+  color: #03DE0B;
+  background-color: transparent;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: .8em;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 100ms ease-in;
+}
+
+.btn-secondary:hover{
+  letter-spacing: 4px;
+  background: transparent;
+  color: #03de0b;
+  text-decoration: none;
+}
+
+.client-link:hover{
+  text-decoration: none;
 }
