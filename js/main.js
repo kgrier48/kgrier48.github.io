@@ -10,6 +10,16 @@ $(window).on("scroll", function() {
     }
 });
 
-
 });
+
+var SlideUp = {
+    distance: '30px',
+    origin: 'bottom',
+    opacity: 0,
+    reset: false,
+    delay: 100,
+    easing: 'ease-in'
+};
+
+ScrollReveal().reveal('.sr-noreset', SlideUp);
 
