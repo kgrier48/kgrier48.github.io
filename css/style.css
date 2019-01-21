@@ -220,6 +220,12 @@ h2.subtitle, span.subtitle, .navbar-item, h4, footer .level-item{
   background-repeat: no-repeat;
 }
 
+.jumbotron.note{
+  background-image: linear-gradient(0deg,rgba(13, 14, 39, 1),rgba(13, 14, 39, .9)), url(/img/lef-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*----- BOOTSTRAP 4 -----*/
 
 .text-white{
