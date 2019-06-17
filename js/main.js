@@ -1,25 +1,47 @@
+$(document).ready(function(){
 
-$( document ).ready(function() {
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 200) {
-        $(".navbar").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".navbar").removeClass("active");
-    }
-});
+    $( ".hamburger" ).click(function() {
+        $( this ).toggleClass( "is-active" );
+        $('.side-menu').toggleClass("open");
+        $('#no-scroll').toggleClass("visible");
+        $('body').toggleClass("visible");
+        $('.menu .nav-item a').delay(300).toggleClass("visible");
+      });
 
-});
+      $( "#no-scroll" ).click(function() {
+        $( this ).toggleClass( "visible" );
+        $('.hamburger').toggleClass( "is-active" );
+        $('.side-menu').toggleClass("open");
+        $('body').toggleClass("visible");
+      });
 
-var SlideUp = {
-    distance: '30px',
-    origin: 'bottom',
-    opacity: 0,
-    reset: false,
-    delay: 100,
-    easing: 'ease-in'
-};
+      $( ".nav-item" ).click(function() {
+        $( '#no-scroll' ).toggleClass( "visible" );
+        $('.hamburger').toggleClass( "is-active" );
+        $('.side-menu').toggleClass("open");
+        $('body').toggleClass("visible");
+      });
 
-ScrollReveal().reveal('.sr-noreset', SlideUp);
+      
+
+      $("a[href^='#']").click(function(e) {
+        e.preventDefault();
+        
+        var position = $($(this).attr("href")).offset().top;
+    
+        $("body, html").animate({
+            scrollTop: position
+        } ,500, 'swing');
+    });
+
+
+    ScrollReveal({ distance: '60px' });
+    ScrollReveal().reveal('.scrollreveal', { delay: 100, reset: true, duration: 750, origin:'bottom', mobile:false, easing:'ease-out' });
+    ScrollReveal().reveal('.scrollreveal-noreset', { delay: 100, reset: false, duration: 750, origin:'bottom', mobile:false, easing:'ease-out' });
+    ScrollReveal().reveal('.scrollreveal-list', { delay: 100, reset: false, duration: 750, origin:'bottom', easing:'ease-out', mobile:false, interval: 100 });
+
+  });
+
+
 

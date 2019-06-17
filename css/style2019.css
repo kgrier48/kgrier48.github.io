@@ -1,0 +1,458 @@
+body{
+  background-color: #f26522;
+}
+
+header{
+    position: relative;
+    background-color: transparent;
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.client-work{
+    border-bottom: #f26522 1px solid;
+    transition: 300ms all ease-in-out;
+}
+
+.client-work:hover{
+    padding: 20px 50px;
+    background-color: white;
+}
+
+/*-- MENU STYLE --*/
+
+nav, .nav-toggle{
+    z-index: 1020;
+}
+
+#menu-icon { 
+    color:#fff; 
+    padding:10px;
+    z-index: 1020;
+  }
+
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham5 .top {
+    stroke-dasharray: 40 82;
+  }
+  .ham5 .bottom {
+    stroke-dasharray: 40 82;
+  }
+  .ham5.active .top {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+  .ham5.active .bottom {
+    stroke-dasharray: 14 82;
+    stroke-dashoffset: -72px;
+  }
+
+
+.navbar-default{
+    border: none;
+    background:transparent;
+    width: 100%;
+    margin: 0;
+    z-index:100;
+}
+
+nav .container-fluid{
+    padding: 0px 20px !important;
+}
+
+
+.svg-brand-div{
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+.hamburger-brand-div{
+    padding-left: 0px;
+}
+
+
+
+
+
+aside#side{
+    position: fixed;
+    height: 100vh;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+    left: -100%;
+    transition: all .3s ease-in-out;
+    z-index: 99;
+}
+
+aside#side.open{
+    left: 0px;
+    transition: all .3s ease-in-out;
+}
+
+.menu{
+    width: 100%;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0px 25px;
+}
+
+.menu .nav-item a{
+    text-decoration: none;
+    font-family: 'Futura', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    color: #f26522;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0px;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms  ease-in;
+     -ms-transition: all 200ms  ease-in;
+      -o-transition: all 200ms  ease-in;
+         transition: all 200ms  ease-in;
+   
+}
+
+.menu .nav-item a:hover{
+    color: antiquewhite;
+    text-shadow: -1px 0 #f26522, 0 1px #f26522, 1px 0 #f26522, 0 -1px #f26522;
+
+}
+
+.menu .nav-item a.visible{
+    opacity: 1;
+}
+
+
+.menu .nav-item{
+    color: #f26522;
+    
+}
+
+#no-scroll {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+#no-scroll.visible{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+body.visible{
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*-- END MENU STYLE --*/
+
+/*-- MOBILE SIZING --*/
+
+h1{
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    letter-spacing: .3rem;
+}
+
+h2{
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+h3{
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.about-sideheader{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+}
+
+.title.client{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: .1rem;
+}
+
+h4{
+
+}
+
+h5{
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+/*-- END MOBILE SIZING --*/
+
+/*-- TABLET SIZING --*/
+@media only screen and (min-width: 768px){
+    
+
+    h1{
+        font-size: 8rem;
+        line-height: 8.5rem;
+        letter-spacing: 1rem;
+    }
+
+    .title.client{
+        font-size: 5rem;
+        line-height: 5.5rem;
+        letter-spacing: .3rem;
+    }
+    
+    h2{
+    
+    }
+    
+    h3{
+        font-size: 3rem;
+        letter-spacing: .1rem;
+    }
+    
+    h4{
+    
+    }
+    
+    h5{
+    
+    }
+    
+
+}
+
+
+/*-- END TABLET SIZING --*/
+
+
+/*-- DESKTOP SIZING --*/
+@media only screen and (min-width: 1024px){
+    
+    h1{
+        font-size: 10rem;
+        line-height: 10.5rem;
+    }
+    
+    h2{
+        
+    }
+    
+    h3{
+    
+    }
+    
+    h4{
+    
+    }
+    
+    h5{
+    
+    }    
+
+
+
+}
+
+
+/*-- END DESKTOP SIZING --*/
+
+
+/*-- COLORS --*/
+
+
+.orange{
+    color: #f26522;
+}
+
+.tan{
+    color: antiquewhite;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+
+}
+
+.orange-bg{
+
+}
+
+.tan-bg{
+    background-color: antiquewhite;
+}
+
+.black-bg{
+
+}
+
+
+/*-- END COLORS --*/
+
+/*-- BUTTONS AND LINKS--*/
+
+
+a{
+    display: inline-block;
+}
+
+.btn-primary{
+    background-color: antiquewhite;
+    border: 2px solid antiquewhite;
+    color: #f26522;
+    padding: 15px 25px;
+    font-family: 'Futura', sans-serif;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    transition: 200ms all linear;
+}
+
+.btn-primary:hover{
+    background-color: transparent;
+    border: 2px solid antiquewhite;
+    text-decoration: none;
+
+}
+
+
+.btn-secondary{
+    color:#f26522;
+    border: 2px solid #f26522;
+    padding: 15px 25px;
+    background-color: transparent;
+    font-family: 'Futura';
+    font-weight: bold;
+    letter-spacing: .1rem;
+    transition: 200ms all linear;
+}
+
+.btn-secondary:hover{
+    background-color: #f26522;
+    color: antiquewhite;
+    text-decoration: none;
+    border: none;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+
+.inline{
+    text-decoration: none;
+    transition: 200ms all linear;
+}
+
+.inline:hover{
+    text-decoration: none;
+    color: #f26522;
+    text-shadow: -1px 0 antiquewhite, 0 1px antiquewhite, 1px 0 antiquewhite, 0 -1px antiquewhite;
+    transition: 200ms all linear;
+}
+
+.client-link{
+
+}
+
+
+/*-- END BUTTONS AND LINKS --*/
+ /*-- KEYFRAMES --*/
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+ /*-- END KEY FRAMES --*/
+
