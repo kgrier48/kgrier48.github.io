@@ -9,6 +9,7 @@ header{
     min-height: 100%;
     width: 100%;
     overflow: hidden;
+    border-radius: 0px !important;
 }
 
 .client-work{
@@ -138,6 +139,9 @@ aside#side.open{
          transition: all 200ms  ease-in;
    
 }
+
+a {text-decoration: none !important;
+color: antiquewhite;}
 
 .menu .nav-item a:hover{
     color: antiquewhite;
