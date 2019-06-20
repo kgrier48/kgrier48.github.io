@@ -398,7 +398,7 @@ a{
     background-color: #f26522;
     color: antiquewhite;
     text-decoration: none;
-    border: none;
+    border: 2px solid #f26522;
 }
 
 button{
