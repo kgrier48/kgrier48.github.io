@@ -43,5 +43,17 @@ $(document).ready(function(){
 
   });
 
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-default");
+      var $gold = $(".brand-img");
+      var $hamburger = $('.hamburger');
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $gold.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $hamburger.toggleClass('scrolled',$(this).scrollTop() > $nav.height());
+    });
+  });
+  
+
 
 

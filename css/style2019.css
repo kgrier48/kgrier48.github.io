@@ -1,5 +1,5 @@
 body{
-  background-color: #f26522;
+  background-color: #ec5800;
 }
 
 header{
@@ -12,14 +12,25 @@ header{
     border-radius: 0px !important;
 }
 
+.client-work a h3, .client-work a p{
+    color: black;
+}
+
 .client-work{
-    border-bottom: #f26522 1px solid;
+    border-bottom: #ec5800 1px solid;
     transition: 300ms all ease-in-out;
 }
 
 .client-work:hover{
     padding: 20px 50px;
     background-color: white;
+}
+
+.client-work:hover > a .btn-secondary{
+    background-color: #ec5800;
+    color: antiquewhite;
+    text-decoration: none;
+    border: 2px solid #ec5800;
 }
 
 /*-- MENU STYLE --*/
@@ -53,8 +64,8 @@ nav, .nav-toggle{
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke:#000;
-    stroke-width:5.5;
-    stroke-linecap:round;
+    stroke-width:4;
+
   }
   .ham5 .top {
     stroke-dasharray: 40 82;
@@ -78,6 +89,12 @@ nav, .nav-toggle{
     width: 100%;
     margin: 0;
     z-index:100;
+    transition: 200ms all ease-in-out;
+}
+
+.navbar-default.scrolled{
+    background: antiquewhite;
+    transition: 100ms all ease-in-out;
 }
 
 nav .container-fluid{
@@ -94,6 +111,9 @@ nav .container-fluid{
     padding-left: 0px;
 }
 
+.brand-img img{
+    max-width: 48px;
+}
 
 
 
@@ -127,7 +147,7 @@ aside#side.open{
     font-family: 'Futura', sans-serif;
     font-size: 3rem;
     letter-spacing: .4rem;
-    color: #f26522;
+    color: #ec5800;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px 0px;
@@ -145,7 +165,7 @@ color: antiquewhite;}
 
 .menu .nav-item a:hover{
     color: antiquewhite;
-    text-shadow: -1px 0 #f26522, 0 1px #f26522, 1px 0 #f26522, 0 -1px #f26522;
+    text-shadow: -1px 0 #ec5800, 0 1px #ec5800, 1px 0 #ec5800, 0 -1px #ec5800;
 
 }
 
@@ -155,7 +175,7 @@ color: antiquewhite;}
 
 
 .menu .nav-item{
-    color: #f26522;
+    color: #ec5800;
     
 }
 
@@ -327,7 +347,7 @@ p{
 
 
 .orange{
-    color: #f26522;
+    color: #ec5800;
 }
 
 .tan{
@@ -367,7 +387,7 @@ a{
 .btn-primary{
     background-color: antiquewhite;
     border: 2px solid antiquewhite;
-    color: #f26522;
+    color: #ec5800;
     padding: 15px 25px;
     font-family: 'Futura', sans-serif;
     font-weight: bold;
@@ -384,8 +404,8 @@ a{
 
 
 .btn-secondary{
-    color:#f26522;
-    border: 2px solid #f26522;
+    color:#ec5800;
+    border: 2px solid #ec5800;
     padding: 15px 25px;
     background-color: transparent;
     font-family: 'Futura';
@@ -395,10 +415,10 @@ a{
 }
 
 .btn-secondary:hover{
-    background-color: #f26522;
+    background-color: #ec5800;
     color: antiquewhite;
     text-decoration: none;
-    border: 2px solid #f26522;
+    border: 2px solid #ec5800;
 }
 
 button{
@@ -414,7 +434,7 @@ button{
 
 .inline:hover{
     text-decoration: none;
-    color: #f26522;
+    color: #ec5800;
     text-shadow: -1px 0 antiquewhite, 0 1px antiquewhite, 1px 0 antiquewhite, 0 -1px antiquewhite;
     transition: 200ms all linear;
 }
