@@ -180,6 +180,13 @@ color: antiquewhite;}
     
 }
 
+.menu .nav-item h2 a{
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
 #no-scroll {
     position: fixed;
     display: block;
