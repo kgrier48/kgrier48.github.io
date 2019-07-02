@@ -70,7 +70,7 @@ nav, .nav-toggle{
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke:#000;
     stroke-width:4;
-
+    stroke-linecap: round;
   }
   .ham5 .top {
     stroke-dasharray: 40 82;

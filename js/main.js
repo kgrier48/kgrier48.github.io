@@ -53,6 +53,11 @@ $(document).ready(function(){
       $hamburger.toggleClass('scrolled',$(this).scrollTop() > $nav.height());
     });
   });
+
+  $(window).scroll(function() {
+    var theta = $(window).scrollTop() /  60 % Math.PI;
+    $('.brand-img').css({ transform: 'rotate(' + theta + 'rad)' });
+    });
   
 
 
