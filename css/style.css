@@ -90,9 +90,6 @@ p{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-    }
 }
 
 #home-header{
@@ -102,4 +99,10 @@ p{
     align-items: flex-start;
     padding: 80px;
     gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .work_row{
+        flex-direction: row;
+    }
 }
