@@ -64,6 +64,23 @@ p{
     color: #FFFBED;
 }
 
+.tertiary-btn{
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #FFFBED;
+}
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
 
 .work_row{
     display: flex;
@@ -72,4 +89,13 @@ p{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+}
+
+#home-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px;
+    gap: 40px;
 }
