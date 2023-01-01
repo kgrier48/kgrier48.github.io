@@ -38,7 +38,7 @@ nav .logo{
 }
 
 nav .right-side{
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
@@ -63,17 +63,18 @@ h1{
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
-    line-height: 96px;
+    font-size: 60px;
+    line-height: 60px;
     color: #FFFBED;
+    margin-bottom: 0px;
 }
 
 h2{
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
     color: #FFFBED;
 }
 
@@ -81,10 +82,9 @@ h2.large{
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 83px;
+    font-size: 40px;
+    line-height: 48px;
     color: #FFFBED;
-      
 }
 
 h3{
@@ -211,7 +211,7 @@ p{
 
 footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 24px 40px;
@@ -257,7 +257,7 @@ footer .right-side{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 80px;
+    padding: 90px 60px;
     gap: 40px;
 }
 
@@ -266,7 +266,7 @@ footer .right-side{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 80px 60px;
+    padding: 90px 60px;
     gap: 40px;
 }
 
@@ -275,7 +275,7 @@ footer .right-side{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 80px;
+    padding: 90px 60px;
     gap: 40px;
 }
 
@@ -288,11 +288,35 @@ footer .right-side{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 80px;
+    padding: 90px 60px;
     gap: 40px;
 }
 
 @media screen and (min-width: 1024px) {
+    h1{
+        font-size: 96px;
+        line-height: 96px;
+    }
+
+    h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    h2.large{
+        font-size: 60px;
+        line-height: 84px;
+    }
+
+    nav .right-side{
+        display: flex;
+    }
+
+    nav .menu{
+        display: none;
+    }
+    
+
     .work_row{
         display: flex;
         flex-direction: row;
@@ -300,5 +324,13 @@ footer .right-side{
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
+    }
+
+    #home-header, #home-work, #home-about, #home-contact{
+        padding: 80px;
+    }
+
+    footer{
+        flex-direction: row;
     }
 }
