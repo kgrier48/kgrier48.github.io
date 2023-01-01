@@ -2,24 +2,39 @@
 
 body{
  background: #232222;
+ margin: 0px;
 }
 
 nav{
+    position: fixed;
+    width: 100%;
+    background: #232222;
+}
+
+nav .nav-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 24px 40px;
     gap: 10px;
 }
 
 nav .left-side{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 31px;
     color: #FFFBED;
+}
+
+nav .logo{
+    width: 48px;
+    height: 48px;
 }
 
 nav .right-side{
@@ -40,7 +55,7 @@ nav a{
     text-decoration: none;
 }
 
-nav a.active{
+nav a.active, footer a.active{
     text-decoration: underline;
 }
 
@@ -114,6 +129,11 @@ p{
     line-height: 21px;
     color: #FFFBED;
     text-decoration: none;
+    transition: all 0ms;
+}
+
+.secondary-btn:hover{
+    background: #9B9A97;
 }
 
 .tertiary-btn{
@@ -122,9 +142,16 @@ p{
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
+    gap: 0px;
     text-decoration: none;
     color: #FFFBED;
     display: flex;
+    transition: all 100ms ease;
+}
+
+.tertiary-btn:hover{
+    color: #9B9A97;
+    gap: 8px;
 }
 
 .button-row{
@@ -176,6 +203,53 @@ p{
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
+}
+
+.off-white{
+    color: #9B9A97;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    gap: 12px;
+    color: #FFFBED;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans';
+}
+
+footer a{
+    color: #FFFBED;
+    text-decoration: none;  
+}
+
+footer .left-side{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+footer .middle-side p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    gap: 8px;
+    color: #9B9A97;
+    display: flex;
+}
+
+footer .right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
 }
 
 #home-header{
