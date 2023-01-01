@@ -62,6 +62,7 @@ p{
     font-size: 16px;
     line-height: 21px;
     color: #FFFBED;
+    text-decoration: none;
 }
 
 .tertiary-btn{
@@ -84,11 +85,14 @@ p{
 
 .work_row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 #home-header{
