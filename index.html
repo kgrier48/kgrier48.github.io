@@ -11,121 +11,105 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <link rel="stylesheet" href="css/portfolio.css">
 </head>
-<body class="text-bg-dark">
-      <nav class="container-fluid sticky-top p-3 text-bg-dark d-flex justify-content-center">
+<body>
+      <nav class="container-fluid sticky-top p-3 d-flex justify-content-center">
           <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <a href="index.html"><img class="logo" style="max-width: 48px;" src="./img/brand-img.png"/></a>
           </div>
           <div class="d-flex align-items-center mb-3 mr-0 mb-md-0">
-            <a class="nav-link px-2 text-white active" href="#">Home</a>
+            <a class="nav-link px-2 text-white active" href="index.html">Home</a>
             <a class="nav-link px-2 text-white" href="aboutme.html">About Me</a>
-            <a class="nav-link px-2 text-white" href="#">My Work</a>
+            <button class="btn btn-link text-white dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+              My Work
+            </button>
+            <ul class="dropdown-menu dropdown-menu-light">
+              <li><a class="dropdown-item" href="#">Loft Design System</a></li>
+              <li><a class="dropdown-item" href="#">Industrial Quoting</a></li>
+              <li><a class="dropdown-item" href="#">Lane's End Experience</a></li>
+              <li><a class="dropdown-item" href="#">Railbird Festivak</a></li>
+              <li><a class="dropdown-item" href="#">Hard Cider Series</a></li>
+              <li><a class="dropdown-item" href="#">IPA Series</a></li>
+            </ul>
             <a class="nav-link px-2 text-white" href="#">Resume</a>
           </div>
       </nav>
-      <section id="home-header">
-        <h1>Ken Grier <span class="off-white">-</span> <br/> Illustrator, Product Designer, and UX Manager</h1>
-        <h2>Living in Pittsburgh, an illustrator and product designer with a passion for helping people and solving problems.</h2>
-        <div class="button-row">
-          <a class="secondary-btn" href="#">Learn More</a>
-          <a class="secondary-btn" href="#">View Resume</a>
+      <section id="home-header" class="container py-5">
+        <h1 class="fs-feature">Ken Grier <span class="off-white">–</span> <br/> Illustrator, Product Designer, and UX Manager</h1>
+        <h2 class="fs-4 pb-3">Living in Pittsburgh, an illustrator and product designer with a passion for helping people and solving problems.</h2>
+        <div class="d-grid gap-3 d-md-flex justify-content-md-start">
+          <a class="btn btn-primary btn-lg" href="#">Learn More</a>
+          <a class="btn btn-dark btn-lg" href="#">View Resume</a>
         </div>
       </section>
-      <section id="home-work">
-        <h3>The Work</h3>
-        <section class="work_row">
-          <div class="work_item">
-            <h4>Loft Design System</h4>
-            <p>Establishing an maintaining a design system through acquisitions and codebase upgrades.</p>
-            <a class="tertiary-btn" href="#">View Loft Design System <span class="material-symbols-outlined">
-              chevron_right
-              </span></a>
+      <section id="home-work" class="container py-5">
+        <section class="row g-5 py-5 row-cols-1 row-cols-lg-3">
+          <div class="work_item col">
+              <h4>Loft Design System</h4>
+              <p>Establishing an maintaining a design system through acquisitions and codebase upgrades.</p>
+              <a class="btn btn-dark d-inline-flex align-items-center" href="#">View Loft Design System <span class="material-symbols-outlined">
+                chevron_right </span></a>
           </div>
-          <div class="work_item">
+          <div class="work_item col">
             <h4>Industrial Quoting</h4>
             <p>Building a two-sided marketplace for industrial buyers to work with manufacturing suppliers</p>
-            <a class="tertiary-btn" href="#">View Industrial Quoting <span class="material-symbols-outlined">
+            <a class="btn btn-dark d-inline-flex align-items-center" href="#">View Industrial Quoting <span class="material-symbols-outlined">
               chevron_right
               </span></a>
           </div>
-          <div class="work_item">
+          <div class="work_item col">
             <h4>Lane’s End Experience</h4>
             <p>Rebuilding the digital experience for a premium horse farm based in Kentucky.</p>
-            <a class="tertiary-btn" href="#">View Lane’s End Experience <span class="material-symbols-outlined">
+            <a class="btn btn-dark d-inline-flex align-items-center" href="#">View Lane’s End Experience <span class="material-symbols-outlined">
               chevron_right
               </span></a>
           </div>
         </section>
-        <section class="work_row">
-          <div class="work_item">
+        <section class="row g-5 py-5 row-cols-1 row-cols-lg-3">
+          <div class="work_item col">
             <h4>Railbird Festival</h4>
             <p>Illustrating and designing assets for the inaugural Railbird Music Festival.</p>
-            <a class="tertiary-btn" href="#">View Railbird Festival <span class="material-symbols-outlined">
+            <a class="btn btn-dark d-inline-flex align-items-center" href="#">View Railbird Festival <span class="material-symbols-outlined">
               chevron_right
               </span></a>
           </div>
-          <div class="work_item">
-            <h4>Hard Cider Campaign</h4>
+          <div class="work_item col">
+            <h4>Hard Cider Series</h4>
             <p>Illustrating and designing a Hard Cider series for a craft brewery located in Lexington, KY.</p>
-            <a class="tertiary-btn" href="#">View Hard Cider Campaign<span class="material-symbols-outlined">
+            <a class="btn btn-dark d-inline-flex align-items-center" href="#">View Hard Cider Campaign<span class="material-symbols-outlined">
               chevron_right
               </span></a>
           </div>
-          <div class="work_item">
-            <h4>IPA Can Series</h4>
+          <div class="work_item col">
+            <h4>IPA Series</h4>
             <p>Illustrating and designing an IPA can series for a craft brewery located in Lexington, KY.</p>
-            <a class="tertiary-btn" href="#">View IPA Can Series <span class="material-symbols-outlined">
+            <a class="btn btn-dark d-inline-flex align-items-center" href="#">View IPA Can Series <span class="material-symbols-outlined">
               chevron_right
               </span></a>
           </div>
         </section>
       </section>
-      <section id="home-about">
-        <h3>About Me</h3>
-        <h2 class="large">Raised in North Carolina, explorer of Tennessee, friend to Kentucky, and friendly neighbor in Pennsylvania.</h2>
-        <p>Coming up in the rural foothills of North Carolina, I was raised with a deep love for understanding how things operate. Systems and mechanisms have always interested me, and allowed me to apply my creativity in new and challenging ways. Son of a computer scientist, I was encouraged at young age to take apart and understand both computer software and hardware over most summers.</p>
+      <section id="home-about" class="container py-5">
+        <h2 class="fs-1">Raised in North Carolina, explorer of Tennessee, friend to Kentucky, and friendly neighbor in Pennsylvania.</h2>
+        <p class="col-12 col-md-6">Coming up in the rural foothills of North Carolina, I was raised with a deep love for understanding how things operate. Systems and mechanisms have always interested me, and allowed me to apply my creativity in new and challenging ways. Son of a computer scientist, I was encouraged at young age to take apart and understand both computer software and hardware over most summers.</p>
         <div class="button-row">
-          <a class="secondary-btn" href="#">Learn More</a>
+          <a class="btn btn-primary btn-lg" href="#">Learn More</a>
         </div>
       </section>
-      <section id="home-contact">
-        <h3>Contact Me</h3>
-        <h2 class="large">Want to connect? Email me at grierkag@gmail.com, or fill out this little form.</h2>
-        <div class="contact-form">
-          <div class="input-row">
-            <div class="input-left">
-              <label for="name" >Name</label>
-              <input name="name" id="name">
-            </div>
-            <div class="input-right">
-              <label for="email">Email Address</label>
-              <input name="email" id="email">
-            </div>
-          </div>
-          <div class="input-row textarea">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <div class="button-row">
-            <a class="secondary-btn" href="#">Send Message</a>
-          </div>
-        </div>
+      <section id="home-contact" class="container py-5">
+        <h2 class="fs-1">Want to connect? Shoot me an email at grierkag@gmail.com</h2>
       </section>
-      <footer>
-        <div class="left-side">
-          <a href="#">@ken.doing.things</a>
-          <a href="#"> grierkag@gmail.com</a>
-        </div>
-        <div class="middle-side">
-          <p>Built with <span class="material-symbols-outlined">favorite</span> by Ken</p>
-        </div>
-        <div class="right-side">
-          <a class="active" href="#">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">My Work</a>
-          <a href="#">Resume</a>
-        </div>
-      </footer>
+      <div class="container text-white">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-top py-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">My Work</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Resume</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">@ken.doing.things</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">grierkag@gmail.com</a></li>
+          </ul>
+        </footer>
+      </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
