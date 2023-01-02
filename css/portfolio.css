@@ -11608,5 +11608,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  color: #000;
+}
+
+.nav-link.active {
+  color: #6c757d !important;
+}
 
 /*# sourceMappingURL=portfolio.css.map */

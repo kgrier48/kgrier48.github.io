@@ -1,3 +1,12 @@
 $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    color: $black;
+}
+
+.nav-link.active{
+    color: $gray-600 !important;
+}
+
