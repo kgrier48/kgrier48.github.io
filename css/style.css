@@ -186,6 +186,8 @@ p{
     padding: 24px;
     gap: 12px;
     flex: 1 1 0;
+    border: 1px solid #383838;
+    border-radius: 24px;
 }
 
 .contact-form{
@@ -195,6 +197,7 @@ p{
     padding: 0px;
     gap: 40px;   
     max-width: 800px; 
+    width: 100%;
 }
 
 .contact-form .input-row{
@@ -203,15 +206,41 @@ p{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
+    width: 100%;
 }
 
-.contact-form .input-row input{
+.contact-form .input-row input, textarea{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 12px;
+    font-size: 16px;
     gap: 4px;
+    border: 1px solid #FFFBED;
+    background: transparent;
+    color: #FFFBED;
 }
+
+.input-row .input-left, .input-row .input-right, .input-row.textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+label {
+    color: #FFFBED;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+textarea{
+    width: 100%;;
+}
+
 
 .off-white{
     color: #9B9A97;
@@ -317,8 +346,9 @@ footer .right-side{
     }
 
     h2.large{
+        margin: 0px 0px 20px;
         font-size: 60px;
-        line-height: 84px;
+        line-height: 72px;
     }
 
     nav .right-side{

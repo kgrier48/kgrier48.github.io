@@ -19,7 +19,7 @@
           </div>
           <div class="right-side">
             <a class="active" href="#">Home</a>
-            <a href="#">About Me</a>
+            <a href="aboutme.html">About Me</a>
             <a href="#">My Work</a>
             <a href="#">Resume</a>
           </div>
@@ -98,11 +98,18 @@
         <h2 class="large">Want to connect? Email me at grierkag@gmail.com, or fill out this little form.</h2>
         <div class="contact-form">
           <div class="input-row">
-            <input></input>
-            <input></input>
+            <div class="input-left">
+              <label for="name" >Name</label>
+              <input name="name" id="name">
+            </div>
+            <div class="input-right">
+              <label for="email">Email Address</label>
+              <input name="email" id="email">
+            </div>
           </div>
-          <div class="input-row">
-            <textarea></textarea>
+          <div class="input-row textarea">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
           </div>
           <div class="button-row">
             <a class="secondary-btn" href="#">Send Message</a>
