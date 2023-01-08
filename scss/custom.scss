@@ -1,8 +1,14 @@
 $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 
-%heading, p {
-    color: #FFFBED !important;
-  }
+.yellow{ color: #FFD233 !important; text-decoration: none !important; }
+
+.yellow-bg{ background-color: #FFD233;}
+
+a.btn-link {color: #FFD233 !important;}
+
+footer a { color: #232222 !important;}
+
+%heading, p { color: #FFFBED !important; }
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -16,22 +22,18 @@ body, nav{
 }
 
 .fs-feature {
-    font-size: calc(3rem + 0.3vw) !important;
+    font-size: calc(4rem + 0.3vw) !important;
 }
 
-.btn-dark {
-    --bs-btn-color: #FFFBED;
-    --bs-btn-bg: transparent;
-    --bs-btn-border-color: #9B9A97;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #424649;
-    --bs-btn-hover-border-color: #373b3e;
-    --bs-btn-focus-shadow-rgb: 66, 70, 73;
-    --bs-btn-active-color: #FFFBED;
-    --bs-btn-active-bg: #4d5154;
-    --bs-btn-active-border-color: #373b3e;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #FFFBED;
-    --bs-btn-disabled-bg: #212529;
-    --bs-btn-disabled-border-color: #212529;
-  }
+.btn-primary { 
+    background-color: #FFD233;
+    border: 1px solid #FFD233;
+    color: #232222;
+ }
+
+ .btn-dark {
+    background-color: #232222;
+    border: 1px solid #FFFBED;
+ }
+
+.btn-lg, .btn-md { border-radius: 1.5rem; padding: 12px 24px;}

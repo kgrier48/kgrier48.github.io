@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.yellow {
+  color: #FFD233 !important;
+  text-decoration: none !important;
+}
+
+.yellow-bg {
+  background-color: #FFD233;
+}
+
+a.btn-link {
+  color: #FFD233 !important;
+}
+
+footer a {
+  color: #232222 !important;
+}
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
   color: #FFFBED !important;
 }
@@ -11621,24 +11638,23 @@ body, nav {
 }
 
 .fs-feature {
-  font-size: calc(3rem + 0.3vw) !important;
+  font-size: calc(4rem + 0.3vw) !important;
+}
+
+.btn-primary {
+  background-color: #FFD233;
+  border: 1px solid #FFD233;
+  color: #232222;
 }
 
 .btn-dark {
-  --bs-btn-color: #FFFBED;
-  --bs-btn-bg: transparent;
-  --bs-btn-border-color: #9B9A97;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #424649;
-  --bs-btn-hover-border-color: #373b3e;
-  --bs-btn-focus-shadow-rgb: 66, 70, 73;
-  --bs-btn-active-color: #FFFBED;
-  --bs-btn-active-bg: #4d5154;
-  --bs-btn-active-border-color: #373b3e;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FFFBED;
-  --bs-btn-disabled-bg: #212529;
-  --bs-btn-disabled-border-color: #212529;
+  background-color: #232222;
+  border: 1px solid #FFFBED;
+}
+
+.btn-lg, .btn-group-lg > .btn, .btn-md {
+  border-radius: 1.5rem;
+  padding: 12px 24px;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
