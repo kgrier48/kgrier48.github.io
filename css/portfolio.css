@@ -10,6 +10,7 @@
 
 a.btn-link {
   color: #FFD233 !important;
+  font-weight: 500;
 }
 
 footer a {
@@ -18,6 +19,10 @@ footer a {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
   color: #FFFBED !important;
+}
+
+h5, .h5 {
+  color: #C2C2C2 !important;
 }
 
 /*!
@@ -11644,12 +11649,14 @@ body, nav {
 .btn-primary {
   background-color: #FFD233;
   border: 1px solid #FFD233;
+  font-weight: 500 !important;
   color: #232222;
 }
 
 .btn-dark {
   background-color: #232222;
   border: 1px solid #FFFBED;
+  font-weight: 500;
 }
 
 .btn-lg, .btn-group-lg > .btn, .btn-md {
