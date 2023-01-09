@@ -12,13 +12,13 @@
       <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-  <nav class="container-fluid sticky-top p-3 d-flex justify-content-center">
+  <nav class="container-fluid d-none d-md-flex sticky-top p-3 d-flex justify-content-center">
     <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
       <a href="index.html"><img class="logo" style="max-width: 48px;" src="./img/icons/logo_white.png"/></a>
     </div>
     <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
-      <a class="nav-link px-2 text-white" href="index.html">Home</a>
-      <a class="nav-link px-2 text-white active" href="resume.html">Experience</a>
+      <a class="nav-link px-2 text-white active" href="index.html">Home</a>
+      <a class="nav-link px-2 text-white" href="resume.html">Experience</a>
       <button class="ml-2 btn btn-link text-white dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
         Work
       </button>
@@ -32,6 +32,39 @@
       </ul>
       <a class="btn btn-primary btn-md ms-2" href="resume.html">Download Resume <img class="ms-1" src="img/icons/download.png"></a>
     </div>
+</nav>
+<nav class="container-fluid d-flex d-md-none sticky-top p-3 d-flex justify-content-center">
+  <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
+    <a href="index.html"><img class="logo" style="max-width: 48px;" src="./img/icons/logo_white.png"/></a>
+  </div>
+  <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
+    <button class="btn btn-dark btn-md" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Menu
+    </button>
+  </div>
+  <div class="offcanvas offcanvas-start text-bg-dark p-4 text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a href="index.html"><img class="logo" style="max-width: 48px;" src="./img/icons/logo_white.png"/></a>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <a class="nav-link py-2 text-white fs-4 active" href="index.html">Home</a>
+    <a class="nav-link py-2 text-white fs-4" href="resume.html">Experience</a>
+    <button class="btn btn-link text-white dropdown-toggle text-decoration-none pt-2 pb-3 fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Work
+    </button>
+    <div class="collapse" id="collapseExample">
+      <ul class="list-unstyled text-center">
+        <li><a class="dropdown-item py-2 fs-4" href="work/loft.html">Loft Design System</a></li>
+        <li><a class="dropdown-item py-2 fs-4" href="work/quoting.html">Industrial Quoting</a></li>
+        <li><a class="dropdown-item py-2 fs-4" href="work/lanesend.html">Lane's End Experience</a></li>
+        <li><a class="dropdown-item py-2 fs-4" href="work/railbird.html">Railbird Festival</a></li>
+        <li><a class="dropdown-item py-2 fs-4" href="work/cider.html">Hard Cider Series</a></li>
+        <li><a class="dropdown-item py-2 fs-4" href="work/ipa.html">IPA Series</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-primary btn-md ms-2" href="resume.html">Download Resume <img class="ms-1" src="img/icons/download.png"></a>
+    </div>
+  </div>
 </nav>
   <section id="hero" class="container py-5">
     <h1 class="fs-feature">Ken Grier</h1>
