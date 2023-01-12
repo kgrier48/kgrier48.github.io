@@ -25,6 +25,14 @@ h5, .h5 {
   color: #C2C2C2 !important;
 }
 
+#header#lanesend {
+  background-image: url(/img/honorcode_confirmation_2.gif) no-repeat cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

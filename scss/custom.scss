@@ -12,6 +12,13 @@ footer a { color: #232222 !important;}
 
 h5 {color: #C2C2C2 !important;}
 
+#header#lanesend {
+    background-image: url(/img/honorcode_confirmation_2.gif) no-repeat cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
