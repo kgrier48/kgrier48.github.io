@@ -12,14 +12,6 @@ footer a { color: #232222 !important;}
 
 h5 {color: #C2C2C2 !important;}
 
-#header#lanesend {
-    background-image: url(/img/honorcode_confirmation_2.gif) no-repeat cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body, nav{
@@ -42,9 +34,21 @@ body, nav{
  }
 
  .btn-dark {
-    background-color: #232222;
+    background: transparent;
     border: 1px solid #FFFBED;
     font-weight: 500;
  }
 
 .btn-lg, .btn-md { border-radius: 1.5rem; padding: 12px 24px;}
+
+.transition-sm{
+    margin-top: -32px;
+}
+
+#lanesend {
+    background: linear-gradient(0deg, rgba(35, 34, 34, 0.94), rgba(35, 34, 34, 0.94)), url('../img/honorcode_confirmation_2.gif');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
