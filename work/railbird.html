@@ -12,27 +12,60 @@
       <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
-      <nav class="container-fluid sticky-top p-3 d-flex justify-content-center">
-          <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <a href="index.html"><img class="logo" style="max-width: 48px;" src="../img/brand-img.png"/></a>
-          </div>
-          <div class="d-flex align-items-center mb-3 mr-0 mb-md-0">
-            <a class="nav-link px-2 text-white" href="../index.html">Home</a>
-            <a class="nav-link px-2 text-white" href="../about.html">About</a>
-            <button class="btn btn-link text-white dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
-              Work
-            </button>
-            <ul class="dropdown-menu dropdown-menu-light">
-              <li><a class="dropdown-item" href="loft.html">Loft Design System</a></li>
-              <li><a class="dropdown-item" href="quoting.html">Industrial Quoting</a></li>
-              <li><a class="dropdown-item" href="lanesend.html">Lane's End Experience</a></li>
-              <li><a class="dropdown-item" href="railbird.html">Railbird Festival</a></li>
-              <li><a class="dropdown-item" href="cider.html">Hard Cider Series</a></li>
-              <li><a class="dropdown-item" href="ipa.html">IPA Series</a></li>
-            </ul>
-            <a class="nav-link px-2 text-white" href="../resume.html">Resume</a>
-          </div>
-      </nav>
+    <nav class="container-fluid d-none d-md-flex sticky-top p-3 d-flex justify-content-center">
+        <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
+          <a href="index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
+        </div>
+        <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
+          <a class="nav-link px-2 text-white active" href="../index.html">Home</a>
+          <a class="nav-link px-2 text-white" href="../resume.html">Experience</a>
+          <button class="ml-2 btn btn-link text-white dropdown-toggle text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+            Work
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+            <li><a class="dropdown-item" href="loft.html">Loft Design System</a></li>
+            <li><a class="dropdown-item" href="quoting.html">Industrial Quoting</a></li>
+            <li><a class="dropdown-item" href="lanesend.html">Lane's End Experience</a></li>
+            <li><a class="dropdown-item" href="railbird.html">Railbird Festival</a></li>
+            <li><a class="dropdown-item" href="cider.html">Hard Cider Series</a></li>
+            <li><a class="dropdown-item" href="ipa.html">IPA Series</a></li>
+          </ul>
+          <a class="btn btn-primary btn-md ms-2" href="resume.html">Download Resume <img class="ms-1" src="../img/icons/download.png"></a>
+        </div>
+    </nav>
+    <nav class="container-fluid d-flex d-md-none sticky-top p-3 d-flex justify-content-center">
+      <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
+        <a href="index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
+      </div>
+      <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
+        <button class="btn btn-dark btn-md" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Menu
+        </button>
+      </div>
+      <div class="offcanvas offcanvas-start text-bg-dark p-4 text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <a href="index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <a class="nav-link py-2 text-white fs-4" href="../index.html">Home</a>
+        <a class="nav-link py-2 text-white fs-4" href="../resume.html">Experience</a>
+        <button class="btn btn-link text-white dropdown-toggle text-decoration-none pt-2 pb-3 fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Work
+        </button>
+        <div class="collapse" id="collapseExample">
+          <ul class="list-unstyled text-center">
+            <li><a class="dropdown-item py-2 fs-4" href="loft.html">Loft Design System</a></li>
+            <li><a class="dropdown-item py-2 fs-4" href="quoting.html">Industrial Quoting</a></li>
+            <li><a class="dropdown-item py-2 fs-4" href="lanesend.html">Lane's End Experience</a></li>
+            <li><a class="dropdown-item py-2 fs-4" href="railbird.html">Railbird Festival</a></li>
+            <li><a class="dropdown-item py-2 fs-4" href="cider.html">Hard Cider Series</a></li>
+            <li><a class="dropdown-item py-2 fs-4 active" href="ipa.html">IPA Series</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-primary btn-md ms-2" href="resume.html">Download Resume <img class="ms-1" src="../img/icons/download.png"></a>
+        </div>
+      </div>
+  </nav>
       <section id="home-header" class="container py-5">
         <h1 class="fs-feature">Railbird Music Festival</h1>
         <h2 class="col-12 col-md-8 col-xl-12 fs-5 mb-5">As the illustrator and designer for a series of label designs for a brewery, I was responsible for creating visually appealing and cohesive designs that effectively communicated the branding and messaging of the brewery.</h2>
@@ -48,25 +81,57 @@
             <img class="col col-md-6 col-xl-4 img-fluid" src="../img/CBB_Labels/CBB_Labels/PrimeDirective.jpg">
         </div>
       </section>
-    <section id="home-contact" class="container py-5">
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="fs-1">Want to connect?</h2>
-                <p>Shoot me an email at grierkag@gmail.com</p>
-            </div>
+
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5 py-5">
+            <div class="work_item col">
+                <h4>Industrial Quoting</h4>
+                <p>Building a two-sided marketplace for industrial buyers to work with manufacturing suppliers</p>
+                <a class="yellow d-inline-flex align-items-center" href="quoting.html">View Industrial Quoting <span class="material-symbols-outlined">
+                  chevron_right
+                  </span></a>
+              </div>
+              <div class="work_item col">
+                <h4>Railbird Festival</h4>
+                <p>Illustrating and designing assets for the inaugural Railbird Music Festival.</p>
+                <a class="yellow d-inline-flex align-items-center" href="railbird.html">View Railbird Festival <span class="material-symbols-outlined">
+                  chevron_right
+                  </span></a>
+              </div>
         </div>
+    </section>
+
+
+
+      <section id="home-contact" class="container py-5 text-center">
+        <h2 class="fs-1">Want to connect?</h2>
+        <p>Email me at <a class="btn-link" href="">grierkag@gmail.com</a></p>
       </section>
-      <div class="container text-white">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-top py-3 mb-3">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white active">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-white">About</a></li>
-            <li class="nav-item"><a href="resume.html" class="nav-link px-2 text-white">Resume</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">@ken.doing.things</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">grierkag@gmail.com</a></li>
-          </ul>
+        <footer class="container-fluid mt-5 px-4 yellow-bg align-content-center text-dark">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <ul class="nav justify-content-center justify-content-md-start py-md-3 pt-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2">@ken.doing.things</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">grierkag@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4">
+              <ul class="nav justify-content-center pt-4 pb-3">
+                <li class="nav-item px-2"><a href="#"><img src="../img/icons/linkedin.svg"></a></li>
+                <li class="nav-item px-2"><a href="#"><img src="../img/icons/instagram.svg"></a></li>
+                <li class="nav-item px-2"><a href="#"><img src="../img/icons/dribbble.svg"></a></li>
+                <li class="nav-item px-2"><a href="#"><img src="../img/icons/github.svg"></a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4">
+              <ul class="nav justify-content-center justify-content-md-end py-3">
+                <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="../about.html" class="nav-link px-2">About</a></li>
+                <li class="nav-item"><a href="../resume.html" class="nav-link px-2">Resume</a></li>
+              </ul>
+            </div>
+          </div>
         </footer>
-      </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
