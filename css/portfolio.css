@@ -11665,7 +11665,11 @@ body, nav {
 }
 
 .transition-sm {
-  margin-top: -32px;
+  margin-top: -40px;
+}
+
+.transition-md {
+  margin-top: -80px;
 }
 
 #lanesend {
@@ -11674,6 +11678,28 @@ body, nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 600px;
+}
+
+#ipa {
+  background: url("../img/ipa-background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.canlayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.can {
+  max-width: 300px;
+  max-height: 756.52px;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
