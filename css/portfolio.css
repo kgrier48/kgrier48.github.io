@@ -4,6 +4,18 @@
   text-decoration: none !important;
 }
 
+.gray {
+  color: #C2C2C2 !important;
+}
+
+.white {
+  color: #FFFBED !important;
+}
+
+.black {
+  color: #232222 !important;
+}
+
 .yellow-bg {
   background-color: #FFD233;
 }
@@ -17,8 +29,18 @@ footer a {
   color: #232222 !important;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #FFFBED !important;
+}
+
+p {
+  color: #C2C2C2 !important;
+}
+
+.fs-5 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
 }
 
 h5, .h5 {
@@ -11634,12 +11656,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body, nav {
-  background-color: #232222;
-}
-
 .nav-link.active {
-  color: #6c757d !important;
+  color: #FFD233 !important;
 }
 
 .fs-feature {
@@ -11661,7 +11679,14 @@ body, nav {
 
 .btn-lg, .btn-group-lg > .btn, .btn-md {
   border-radius: 1.5rem;
-  padding: 12px 24px;
+  padding: 12px 16px;
+}
+
+.badge.badge-primary {
+  color: #232222;
+  background-color: #FFD233;
+  border: 1px solid #D8A800;
+  border-radius: 4px;
 }
 
 .transition-sm {
@@ -11670,6 +11695,26 @@ body, nav {
 
 .transition-md {
   margin-top: -80px;
+}
+
+.canlayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.can {
+  max-width: 300px;
+  max-height: 756.52px;
+}
+
+body {
+  background: linear-gradient(180deg, #181818 0%, #232222 46.35%, #181818 100%);
+}
+
+#hero {
+  min-height: 300px;
 }
 
 #lanesend {
@@ -11690,16 +11735,24 @@ body, nav {
   min-height: 600px;
 }
 
-.canlayout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+#cider {
+  background: url("../img/HardCider_BG.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
 }
 
-.can {
-  max-width: 300px;
-  max-height: 756.52px;
+.material-symbols-sharp {
+  color: #FFFBED;
+  font-size: 48px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.material-symbols-sharp.small {
+  font-size: 24px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
