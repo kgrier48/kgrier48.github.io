@@ -12,43 +12,78 @@
       <link rel="stylesheet" href="../css/portfolio.css">
 </head>
 <body>
-  <nav class="container-fluid d-none d-md-flex sticky-top p-3 d-flex justify-content-center">
+   
+  <!-- START NAVIGATION -->
+
+  <nav id="desktop" class="container-fluid d-none d-md-flex justify-content-center position-fixed top-0 p-3">
+      <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
+        <a href="../index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
+      </div>
+      <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
+        <a class="nav-link px-3 text-white" href="../index.html">Home</a>
+        <a class="nav-link px-3 text-white" href="../resume.html">Experience</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link px-3 text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./loft.html">Loft Design System</a></li>
+            <li><a class="dropdown-item" href="./quoting.html">Industrial Quoting</a></li>
+            <li><a class="dropdown-item" href="./lanesend.html">Lane's End Horse Farm</a></li>
+            <li><a class="dropdown-item" href="./ipa.html">IPA Can Seriers</a></li>
+            <li><a class="dropdown-item" href="./railbird.html">Railbird Music Festival</a></li>
+            <li><a class="dropdown-item" href="../projects.html">View All Projects</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-primary btn-md ms-2 d-flex" href="../resume.html">Download Resume <span class="ms-1 black material-symbols-sharp small">download</span></a>
+      </div>
+  </nav>
+  <nav id="mobile" class="container-fluid d-flex d-md-none justify-content-center position-fixed top-0 p-3">
     <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
       <a href="../index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
     </div>
     <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
-      <a class="nav-link px-2 text-white" href="../index.html">Home</a>
-      <a class="nav-link px-2 text-white" href="../resume.html">Experience</a>
-      <a class="nav-link px-2 text-white" href="../projects.html">Projects</a>
-      <a class="btn btn-primary btn-md ms-2 d-flex" href="../resume.html">Download Resume <span class="ms-1 black material-symbols-sharp small">download</span></a>
+      <button class="btn btn-dark btn-md" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Menu
+      </button>
     </div>
-</nav>
-<nav class="container-fluid d-flex d-md-none sticky-top p-3 d-flex justify-content-center">
-  <div class="d-flex alig n-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
-    <a href="../index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
-  </div>
-  <div class="d-flex align-items-center mb-3 me-2 mb-md-0">
-    <button class="btn btn-dark btn-md" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      Menu
-    </button>
-  </div>
-  <div class="offcanvas offcanvas-start text-bg-dark p-4 text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <a href="../index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-start text-bg-dark p-4 text-center" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <a href="../index.html"><img class="logo" style="max-width: 48px;" src="../img/icons/logo_white.png"/></a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <a class="nav-link py-2 fs-4 active" href="../index.html">Home</a>
+      <a class="nav-link py-2 fs-4" href="../resume.html">Experience</a>
+      <p>
+        <a class="nav-link py-2 fs-4 text-white d-flex justify-content-center" data-bs-toggle="collapse" href="#mobileprojects" role="button" aria-expanded="false" aria-controls="mobileprojects">
+          Projects <span class="mt-1 material-symbols-sharp small">keyboard_arrow_down</span>
+        </a>
+      </p>
+      <div class="collapse" id="mobileprojects">
+        <ul class="mobileprojects-list list-unstyled">
+          <li><a class="nav-link py-2 fs-4" href="./loft.html">Loft Design System</a></li>
+          <li><a class="nav-link py-2 fs-4" href="./quoting.html">Industrial Quoting</a></li>
+          <li><a class="nav-link py-2 fs-4" href="./lanesend.html">Lane's End Horse Farm</a></li>
+          <li><a class="nav-link py-2 fs-4" href="./ipa.html">IPA Can Seriers</a></li>
+          <li><a class="nav-link py-2 fs-4" href="./railbird.html">Railbird Music Festival</a></li>
+          <li><a class="nav-link py-2 fs-4" href="../projects.html">View All Projects</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-primary btn-md ms-2" href="../resume.html">Download Resume <img class="ms-1" src="../img/icons/download.png"></a>
+      </div>
     </div>
-    <a class="nav-link py-2 fs-4" href="../index.html">Home</a>
-    <a class="nav-link py-2 fs-4" href="../resume.html">Experience</a>
-    <a class="nav-link py-2 fs-4" href="../projects.html">Projects</a>
+  </nav>
 
-    <a class="btn btn-primary btn-md ms-2" href="../resume.html">Download Resume <img class="ms-1" src="../img/icons/download.png"></a>
+<!-- END NAVIGATION -->
+
+  <section id="loft" class="container-fluid d-flex align-items-center text-left text-md-center py-5">
+    <div id="home-header" class="container py-5">
+        <h1 class="fs-feature pt-5">Loft Design System</h1>
+        <h2 class="col-12 col-md-8 fs-5 mx-auto mb-5">As a design lead for a design system, my role involves maintaining and improving the system to ensure that it is effective and efficient for designers and developers. This includes defining design standards, creating and updating design assets and components, and collaborating with cross-functional teams to ensure that the design system is consistently applied across the organization.</h2>
+        <p class="gray">Responsibilities Included: Design Lead, Product Management, Art Direction</p>
     </div>
-  </div>
-</nav>
-      <section id="home-header" class="container py-5">
-        <h1 class="fs-feature">Loft Design System</h1>
-        <p class="col-12 col-md-6">As a design lead for a design system, my role involves maintaining and improving the system to ensure that it is effective and efficient for designers and developers. This includes defining design standards, creating and updating design assets and components, and collaborating with cross-functional teams to ensure that the design system is consistently applied across the organization.</p>
-      </section>
+  </section>
+
       <section class="container">
         <h3>Maintaining a Design System</h3>
         <p>One of the main challenges with maintaining a design system is ensuring that it is consistently applied across an organization. This requires ongoing communication and collaboration with designers and developers, as well as regular updates to the design system to reflect changes in business needs and design trends. Another challenge is balancing the need for flexibility and adaptability with the need for consistency and efficiency.</p>
@@ -57,35 +92,69 @@
         <h3>Design System Standards and Roadmaps</h3>
         <p>As part of my role as a design lead, I worked closely with development to publish design system standards and build a design system roadmap. This involved defining the design standards and guidelines for the organization, as well as creating a roadmap for the development and implementation of the design system. I also worked with the development team to ensure that the design system was properly integrated into their workflow and to address any technical challenges that arose. By collaborating with development, we were able to create a comprehensive design system that met the needs of both designers and developers.</p>
       </section>
-      <section id="home-contact" class="container py-5 text-center">
-        <h2 class="fs-1">Want to connect?</h2>
-        <p>Email me at <a class="btn-link" href="">grierkag@gmail.com</a></p>
-      </section>
-        <footer class="container-fluid mt-5 px-4 yellow-bg align-content-center text-dark">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <ul class="nav justify-content-center justify-content-md-start py-md-3 pt-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2">@ken.doing.things</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">grierkag@gmail.com</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="nav justify-content-center pt-4 pb-3">
-                <li class="nav-item px-2"><a href="#"><img src="../img/icons/linkedin.svg"></a></li>
-                <li class="nav-item px-2"><a href="#"><img src="../img/icons/instagram.svg"></a></li>
-                <li class="nav-item px-2"><a href="#"><img src="../img/icons/dribbble.svg"></a></li>
-                <li class="nav-item px-2"><a href="#"><img src="../img/icons/github.svg"></a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-4">
-              <ul class="nav justify-content-center justify-content-md-end py-3">
-                <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
-                <li class="nav-item"><a href="../about.html" class="nav-link px-2">About</a></li>
-                <li class="nav-item"><a href="../resume.html" class="nav-link px-2">Resume</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-5 my-5 py-5">
+            <div class="work_item col">
+                <h4>Industrial Quoting</h4>
+                <p>Building a two-sided marketplace for industrial buyers to work with manufacturing suppliers</p>
+                <a class="yellow d-inline-flex align-items-center" href="./quoting.html">View Industrial Quoting <span class="material-symbols-sharp small yellow">
+                  arrow_right_alt</span></a>
+              </div>
+              <div class="work_item col">
+                <h4>IPA Can Series</h4>
+                <p>Illustrating and designing an IPA can series for a craft brewery located in Lexington, KY.</p>
+                <a class="yellow d-inline-flex align-items-center" href="./railbird.html">View IPA Can Series <span class="material-symbols-sharp small yellow">
+                  arrow_right_alt</span></a>
+              </div>
+        </div>
+    </section>
+
+          <!-- START FOOTER -->
+
+          <section id="contact" class="container py-5 text-center">
+            <h2 class="fs-1">Want to connect?</h2>
+            <p>Email me at <a class="text-link" href="mailto:grierkag@gmail.com">grierkag@gmail.com</a></p>
+          </section>
+          <footer class="container-fluid mt-5 px-4 yellow-bg align-content-center text-dark">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <ul class="nav justify-content-center justify-content-md-start align-content-center py-md-3 pt-3">
+                    <li class="nav-item"><a href="https://www.instagram.com/ken.doing.things" target="_blank" class="nav-link px-2">@ken.doing.things</a></li>
+                    <li class="nav-item"><a href="mailto:grierkag@gmail.com" class="nav-link px-2">grierkag@gmail.com</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                  <ul class="nav justify-content-center pt-4 pb-3">
+                    <li class="nav-item px-2"><a href="https://www.linkedin.com/in/ken-grier-design/" target="_blank"><img src="../img/icons/linkedin.svg"></a></li>
+                    <li class="nav-item px-2"><a href="https://www.instagram.com/ken.doing.things" target="_blank"><img src="../img/icons/instagram.svg"></a></li>
+                    <li class="nav-item px-2"><a href="https://dribbble.com/grierkag" target="_blank"><img src="../img/icons/dribbble.svg"></a></li>
+                    <li class="nav-item px-2"><a href="https://github.com/kgrier48" target="_blank"><img src="../img/icons/github.svg"></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                  <ul class="nav justify-content-center justify-content-md-end py-3">
+                    <li class="nav-item"><a href="../index.html" class="nav-link px-2">Home</a></li>
+                    <li class="nav-item"><a href="../about.html" class="nav-link px-2">About</a></li>
+                    <li class="nav-item"><a href="../projects.html" class="nav-link px-2">Projects</a></li>
+                  </ul>
+                </div>
+              </div>
+          </footer>
+    
+            <!-- END FOOTER -->
+    
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+          <script>
+              var className = "scrolled";
+              var scrollTrigger = 60;
+    
+              window.onscroll = function() {
+                if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                  document.getElementsByTagName("nav")[0].classList.add(className);
+                } else {
+                  document.getElementsByTagName("nav")[0].classList.remove(className);
+                }
+              };
+          </script>
 </body>
 </html>

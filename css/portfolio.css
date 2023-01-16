@@ -16,6 +16,9 @@
   color: #232222 !important;
 }
 
+nav {
+  z-index: 999;
+}
 nav.scrolled {
   background-color: #181818;
 }
@@ -11741,7 +11744,7 @@ body {
 }
 
 #lanesend {
-  background: linear-gradient(0deg, rgba(35, 34, 34, 0.94), rgba(35, 34, 34, 0.94)), url("../img/honorcode_confirmation_2.gif");
+  background: linear-gradient(0deg, rgba(35, 34, 34, 0.94), rgba(18, 18, 18, 0.98)), url("../img/honorcode_confirmation_2.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11776,6 +11779,21 @@ body {
 .material-symbols-sharp.small {
   font-size: 24px;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
