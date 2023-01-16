@@ -1,4 +1,5 @@
 $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+$card-height: 100%;
 
 .yellow{ color: #FFD233 !important; text-decoration: none !important; }
 .gray {color: #C2C2C2 !important;}
@@ -6,14 +7,27 @@ $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", 
 .black {color:#232222 !important;}
 
 nav{
-    &.inverted {
+    &.scrolled {
         background-color: #181818;
       }
 }
 
 .yellow-bg{ background-color: #FFD233;}
 
-a.btn-link {color: #FFD233 !important; font-weight: 500;}
+a {
+    color: #FFD233;
+    font-weight: 500;
+    &:hover{
+        color: #D8A800;
+    }
+}
+
+a.text-link {
+    color: #FFD233 !important;
+    &:hover{
+        color: #D8A800 !important;
+    }
+}
 
 footer a { color: #232222 !important;}
 
@@ -46,6 +60,11 @@ h5 {color: #C2C2C2 !important;}
     border: 1px solid #FFD233;
     font-weight: 500 !important;
     color: #232222;
+    &:hover{
+        background-color: #D8A800;
+        color: #232222;
+        border: 1px solid #D8A800;
+    }
  }
 
  .btn-dark {
@@ -53,6 +72,8 @@ h5 {color: #C2C2C2 !important;}
     border: 1px solid #FFFBED;
     font-weight: 500;
  }
+
+
 
 .btn-lg, .btn-md { border-radius: 1.5rem; padding: 12px 16px;}
 
@@ -76,6 +97,13 @@ h5 {color: #C2C2C2 !important;}
 .can {
     max-width: 300px;
     max-height: 756.52px;
+}
+
+
+.card {
+    &:hover{
+        margin: 2rem;
+    }
 }
 
 body {
