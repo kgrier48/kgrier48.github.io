@@ -16,6 +16,10 @@
   color: #232222 !important;
 }
 
+nav.inverted {
+  background-color: #181818;
+}
+
 .yellow-bg {
   background-color: #FFD233;
 }

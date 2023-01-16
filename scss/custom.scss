@@ -5,6 +5,12 @@ $font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", 
 .white {color: #FFFBED !important;}
 .black {color:#232222 !important;}
 
+nav{
+    &.inverted {
+        background-color: #181818;
+      }
+}
+
 .yellow-bg{ background-color: #FFD233;}
 
 a.btn-link {color: #FFD233 !important; font-weight: 500;}
