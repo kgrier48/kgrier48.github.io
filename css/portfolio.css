@@ -42,6 +42,12 @@ a.text-link:hover {
   color: #D8A800 !important;
 }
 
+button.text-link {
+  background: transparent;
+  text-decoration: underline !important;
+  border: 0px;
+}
+
 footer a {
   color: #232222 !important;
 }

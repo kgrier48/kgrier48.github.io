@@ -146,7 +146,7 @@
 
           <section id="contact" class="container py-5 text-center">
             <h2 class="fs-1">Want to connect?</h2>
-            <p>Email me at <a class="text-link" href="mailto:grierkag@gmail.com">grierkag@gmail.com</a></p>
+            <p>Email me at <button class="text-link yellow" onclick="copyContent()">grierkag@gmail.com <span class="material-symbols-sharp small yellow"> copy_all</span></button><span id="email" class="d-none content-copy">grierkag@gmail.com</span></p>
           </section>
           <footer class="container-fluid mt-5 px-4 yellow-bg align-content-center text-dark">
               <div class="row">
@@ -188,6 +188,17 @@
                   document.getElementsByTagName("nav")[0].classList.remove(className);
                 }
               };
+          </script>
+          <script>
+            let text = document.getElementById('email').innerHTML;
+            const copyContent = async () => {
+              try {
+                await navigator.clipboard.writeText(text);
+                console.log('Content copied to clipboard');
+              } catch (err) {
+                console.error('Failed to copy: ', err);
+              }
+            }
           </script>
 </body>
 </html>
