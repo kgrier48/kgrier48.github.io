@@ -20,7 +20,7 @@ nav {
   z-index: 999;
 }
 nav.scrolled {
-  background-color: #1C352B;
+  background-color: #FAFAFA;
 }
 
 .yellow-bg {
@@ -53,11 +53,11 @@ footer a {
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-  color: #FFFBED !important;
+  color: #1B311E !important;
 }
 
 p {
-  color: #C2C2C2 !important;
+  color: #1B311E !important;
 }
 
 .fs-5 {
@@ -11737,7 +11737,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background: linear-gradient(180deg, #181818 0%, #232222 46.35%, #181818 100%);
+  background: #FAFAFA;
 }
 
 #hero {

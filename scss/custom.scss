@@ -9,7 +9,7 @@ $card-height: 100%;
 nav{
     z-index: 999;
     &.scrolled {
-        background-color: #1C352B;
+        background-color: #FAFAFA;
       }
 }
 
@@ -38,9 +38,9 @@ button.text-link{
 
 footer a { color: #232222 !important;}
 
-%heading { color: #FFFBED !important; }
+%heading { color: #1B311E !important; }
 
-p {color: #C2C2C2 !important;}
+p {color: #1B311E !important;}
 
 .fs-5 {
     font-size: 1.25rem;
@@ -108,7 +108,7 @@ h5 {color: #C2C2C2 !important;}
 }
 
 body {
-    background: linear-gradient(180deg, #181818 0%, #232222 46.35%, #181818 100%);
+    background: #FAFAFA;
 }
 
 #hero{
