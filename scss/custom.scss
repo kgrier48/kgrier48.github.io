@@ -1,25 +1,53 @@
-$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
-$card-height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,500&display=swap');
+$font-headings: 'Barlow Condensed', sans-serif; 
+$font-body: 'Helvetica', sans-serif;
+$white: #FFFBED;
+$green: #1B311E;
+$blue100: #011638;
+$blue75: #0F69FA;
+
 
 .yellow{ color: #FFD233 !important; text-decoration: none !important; }
 .gray {color: #C2C2C2 !important;}
-.white {color: #FFFBED !important;}
 .black {color:#232222 !important;}
+
+
+%heading { 
+    font-family: $font-headings;
+    color: $white !important;
+    text-transform: uppercase;
+    .outline {
+        color: $blue100;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $white;
+    }
+}
+
+body{
+    font-family: $font-body;
+    color: $white !important;
+    background-color: $blue100 !important;
+}
 
 nav{
     z-index: 999;
     &.scrolled {
-        background-color: #181818;
+        background-color: $blue100;
       }
+}
+
+.citation {
+    font-family: $font-body;
+    font-size: 12px;
 }
 
 .yellow-bg{ background-color: #FFD233;}
 
 a {
-    color: #FFD233;
+    color: black;
     font-weight: 500;
     &:hover{
-        color: #D8A800;
+        color: black;
     }
 }
 
@@ -38,17 +66,12 @@ button.text-link{
 
 footer a { color: #232222 !important;}
 
-%heading { color: #FFFBED !important; }
-
-p {color: #C2C2C2 !important;}
-
 .fs-5 {
     font-size: 1.25rem;
     line-height: 1.875rem;
     font-weight: 400;
 }
 
-h5 {color: #C2C2C2 !important;}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -59,7 +82,9 @@ h5 {color: #C2C2C2 !important;}
 }
 
 .fs-feature {
-    font-size: calc(4rem + 0.3vw) !important;
+    font-size: calc(6rem + 0.3vw) !important;
+    line-height: 6rem;
+    text-transform: uppercase;
 }
 
 .btn-primary { 
@@ -105,10 +130,6 @@ h5 {color: #C2C2C2 !important;}
     &:hover{
         margin: 2rem;
     }
-}
-
-body {
-    background: linear-gradient(180deg, #181818 0%, #232222 46.35%, #181818 100%);
 }
 
 #hero{
