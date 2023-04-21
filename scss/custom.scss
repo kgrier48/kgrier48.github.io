@@ -3,6 +3,8 @@ $font-headings: 'Barlow Condensed', sans-serif;
 $font-body: 'Helvetica', sans-serif;
 $white: #FFFBED;
 $green: #1B311E;
+$blue100: #011638;
+$blue75: #0F69FA;
 
 
 .yellow{ color: #FFD233 !important; text-decoration: none !important; }
@@ -12,34 +14,40 @@ $green: #1B311E;
 
 %heading { 
     font-family: $font-headings;
-    color: $green !important;
+    color: $white !important;
+    text-transform: uppercase;
     .outline {
-        color: $white;
+        color: $blue100;
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: $green;
+        -webkit-text-stroke-color: $white;
     }
 }
 
 body{
     font-family: $font-body;
-    color: $green;
-    background-color: $white;
+    color: $white !important;
+    background-color: $blue100 !important;
 }
 
 nav{
     z-index: 999;
     &.scrolled {
-        background-color: #FAFAFA;
+        background-color: $blue100;
       }
+}
+
+.citation {
+    font-family: $font-body;
+    font-size: 12px;
 }
 
 .yellow-bg{ background-color: #FFD233;}
 
 a {
-    color: #FFD233;
+    color: black;
     font-weight: 500;
     &:hover{
-        color: #D8A800;
+        color: black;
     }
 }
 

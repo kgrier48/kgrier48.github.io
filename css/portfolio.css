@@ -15,25 +15,31 @@
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Barlow Condensed", sans-serif;
-  color: #1B311E !important;
+  color: #FFFBED !important;
+  text-transform: uppercase;
 }
 h6 .outline, .h6 .outline, h5 .outline, .h5 .outline, h4 .outline, .h4 .outline, h3 .outline, .h3 .outline, h2 .outline, .h2 .outline, h1 .outline, .h1 .outline {
-  color: #FFFBED;
+  color: #011638;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #1B311E;
+  -webkit-text-stroke-color: #FFFBED;
 }
 
 body {
   font-family: "Helvetica", sans-serif;
-  color: #1B311E;
-  background-color: #FFFBED;
+  color: #FFFBED !important;
+  background-color: #011638 !important;
 }
 
 nav {
   z-index: 999;
 }
 nav.scrolled {
-  background-color: #FAFAFA;
+  background-color: #011638;
+}
+
+.citation {
+  font-family: "Helvetica", sans-serif;
+  font-size: 12px;
 }
 
 .yellow-bg {
@@ -41,11 +47,11 @@ nav.scrolled {
 }
 
 a {
-  color: #FFD233;
+  color: black;
   font-weight: 500;
 }
 a:hover {
-  color: #D8A800;
+  color: black;
 }
 
 a.text-link {
