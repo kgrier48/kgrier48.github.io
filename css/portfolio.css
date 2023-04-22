@@ -11750,7 +11750,7 @@ textarea.form-control-lg {
 }
 
 #lanesend {
-  background: linear-gradient(0deg, rgb(1, 22, 56) rgba(1, 22, 56, 0.94)), url("../img/honorcode_confirmation_2.gif");
+  background: linear-gradient(0deg, rgb(1, 22, 56), rgba(1, 22, 56, 0.94)), url("../img/honorcode_confirmation_2.gif");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
