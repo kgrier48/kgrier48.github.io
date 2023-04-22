@@ -1,3 +1,9 @@
+import slickScroll from `./slickscroll.node.min.js`;
+
+const slick = new slickScroll({
+    root: "body"
+});
+
 $(document).ready(function(){
 
 
@@ -53,6 +59,3 @@ $(document).ready(function(){
       $hamburger.toggleClass('scrolled',$(this).scrollTop() > $nav.height());
     });
   });
-
-
-
