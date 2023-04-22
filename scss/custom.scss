@@ -3,20 +3,22 @@ $font-headings: 'Poppins', sans-serif;
 $font-body: 'Helvetica', sans-serif;
 $white: #FAFAFA;
 $green: #1B311E;
+$blue125: #00112C;
 $blue100: #011638;
 $blue75: #0F69FA;
 $gray75: #C2C2C2;
 $gray100: #262626;
+$yellow100: #DAA520;
+$yellow125: #C4941C;
 
 
-.yellow{ color: #FFD233 !important; text-decoration: none !important; }
 .gray {color: #C2C2C2 !important;}
 .black {color:#232222 !important;}
 
 
 %heading { 
     font-family: $font-headings;
-    color: $white !important;
+    color: $white;
     .outline {
         color: $blue100;
         -webkit-text-stroke-width: 2px;
@@ -42,7 +44,9 @@ nav{
     font-size: 12px;
 }
 
-.yellow-bg{ background-color: #FFD233;}
+.yellow-bg{ background-color: $yellow100;}
+.yellow{ color: $yellow100 !important; text-decoration: none !important; }
+.blue { color: $blue100 !important;}
 
 a {
     color: black;
@@ -88,16 +92,42 @@ footer a { color: #232222 !important;}
 }
 
 .btn-primary { 
-    background-color: #FFD233;
-    border: 1px solid #FFD233;
+    background-color: $yellow100;
+    border: 1px solid $yellow100;
     font-weight: 500 !important;
-    color: #232222;
+    color: $blue100;
     &:hover{
-        background-color: #D8A800;
-        color: #232222;
-        border: 1px solid #D8A800;
+        background-color: $yellow125;
+        color: $blue100;
+        border: 1px solid $yellow125;
     }
  }
+
+
+.btn-secondary.light-bg {
+    background-color: $yellow100;
+    border: 1px solid $blue100;
+    font-weight: 500 !important;
+    color: $blue100;
+    &:hover{
+        background-color: $yellow125;
+        color: $blue100;
+        border: 1px solid $blue100;
+    }
+}
+
+.btn-secondary.dark-bg {
+    background-color: $blue100;
+    border: 1px solid $yellow100;
+    font-weight: 500 !important;
+    color: $yellow100;
+    &:hover{
+        background-color: $blue125;
+        color: $yellow100;
+        border: 1px solid $yellow125;
+    }
+}
+
 
  .btn-dark {
     background: transparent;
@@ -198,6 +228,10 @@ footer a { color: #232222 !important;}
     width: 100%;
   }
 
+#about{
+    color: $blue100;
+}
+
 .about-history {
     margin-top: 6rem;
 }
@@ -208,7 +242,7 @@ footer a { color: #232222 !important;}
 }
 
 .about-row {
-    border-bottom: 1px solid $gray75;
+    border-bottom: 1px solid $blue100;
     padding-bottom: .125rem;
     margin-bottom: 1rem;
 }
@@ -216,4 +250,30 @@ footer a { color: #232222 !important;}
 .about-item-end {
     margin-right: 0px;
     text-align: right;
+}
+
+
+
+.work_title{
+    border-bottom:  1px solid $blue100;
+}
+
+.work_item {
+    min-height: 300px;
+    border-right: 1px solid $blue100;
+    border-bottom: 1px solid $blue100;
+    h4, a, span, p{
+        color: $blue100 !important;
+        text-decoration: none !important;
+    }
+}
+
+.work_item .work_item_end {
+    border-right: 0px;
+    border-bottom: 1px solid $blue100;
+}
+
+
+footer a{
+    color: $yellow100;
 }
