@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,500&display=swap');
-$font-headings: 'Barlow Condensed', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+$font-headings: 'Poppins', sans-serif; 
 $font-body: 'Helvetica', sans-serif;
-$white: #FFFBED;
+$white: #FAFAFA;
 $green: #1B311E;
 $blue100: #011638;
 $blue75: #0F69FA;
+$gray75: #C2C2C2;
+$gray100: #262626;
 
 
 .yellow{ color: #FFD233 !important; text-decoration: none !important; }
@@ -15,7 +17,6 @@ $blue75: #0F69FA;
 %heading { 
     font-family: $font-headings;
     color: $white !important;
-    text-transform: uppercase;
     .outline {
         color: $blue100;
         -webkit-text-stroke-width: 2px;
@@ -27,6 +28,25 @@ body{
     font-family: $font-body;
     color: $white !important;
     background-color: $blue100 !important;
+}
+
+
+#hero {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 nav{
@@ -41,30 +61,41 @@ nav{
     font-size: 12px;
 }
 
-.yellow-bg{ background-color: #FFD233;}
+.container.white, .container-fluid.white{
+    background-color: $white;
+}
 
 a {
     color: black;
-    font-weight: 500;
+    font-weight: 600;
+    text-decoration: none !important;
     &:hover{
         color: black;
     }
 }
 
-a.text-link {
-    color: #FFD233 !important;
+
+.btn.btn-link, .btn.btn-link span{
+    color: $gray100;
+    font-weight: 600;
     &:hover{
-        color: #D8A800 !important;
+        color: $gray75 !important;
+        transition: 150ms all ease;
     }
 }
 
-button.text-link{
-    background: transparent;
-    text-decoration: underline !important;
-    border: 0px;
+.btn-link, svg#right path{
+    transition: 150ms all ease;
 }
 
-footer a { color: #232222 !important;}
+.btn-link:hover svg#right path {
+    d: path(
+      "M0 9.35772H50.9956L44.2001 2.29941L46.4134 0L57 11L46.4134 22L44.2001 19.7006L50.9956 12.6423H0V9.35772Z"
+    );
+    d: "M0 9.35772H50.9956L44.2001 2.29941L46.4134 0L57 11L46.4134 22L44.2001 19.7006L50.9956 12.6423H0V9.35772Z";
+  }
+
+footer a { color: $white;}
 
 .fs-5 {
     font-size: 1.25rem;
@@ -84,7 +115,6 @@ footer a { color: #232222 !important;}
 .fs-feature {
     font-size: calc(6rem + 0.3vw) !important;
     line-height: 6rem;
-    text-transform: uppercase;
 }
 
 .btn-primary { 
