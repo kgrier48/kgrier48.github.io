@@ -21,8 +21,12 @@ $yellow125: #C4941C;
     color: $white;
     .outline {
         color: $blue100;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $white;
+        @media screen and (min-width: 768px){
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $white;
+        }
     }
 }
 
@@ -83,12 +87,23 @@ footer a { color: #232222 !important;}
 
 
 .nav-link.active{
-    color: #FFD233 !important;
+    color: $yellow100;
+}
+
+nav .offcanvas {
+    background-color: $blue100;
+    .nav-link {
+        color: $white;
+    }
 }
 
 .fs-feature {
-    font-size: calc(6rem + 0.3vw) !important;
-    line-height: 7rem;
+    font-size: calc(3rem + 0.3vw) !important;
+    line-height: 4rem;
+    @media screen and (min-width: 768px){
+        font-size: calc(6rem + 0.3vw) !important;
+        line-height: 7rem;
+    }
 }
 
 .btn-primary { 
@@ -245,11 +260,13 @@ footer a { color: #232222 !important;}
     border-bottom: 1px solid $blue100;
     padding-bottom: .125rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap!important;
 }
 
 .about-item-end {
     margin-right: 0px;
     text-align: right;
+    flex-wrap: wrap!important;
 }
 
 
@@ -260,15 +277,18 @@ footer a { color: #232222 !important;}
 
 .work_item {
     min-height: 300px;
-    border-right: 1px solid $blue100;
+    border-right: 0px;
     border-bottom: 1px solid $blue100;
     h4, a, span, p{
         color: $blue100 !important;
         text-decoration: none !important;
     }
+    @media screen and (min-width: 992px){
+        border-right: 1px solid $blue100;
+    }
 }
 
-.work_item .work_item_end {
+.work_item.work_item_end {
     border-right: 0px;
     border-bottom: 1px solid $blue100;
 }
