@@ -54,11 +54,5 @@ $(document).ready(function(){
     });
   });
 
-  $(window).scroll(function() {
-    var theta = $(window).scrollTop() /  60 % Math.PI;
-    $('.brand-img .img-fluid').css({ transform: 'rotate(' + theta + 'rad)' });
-    });
-  
-
 
 

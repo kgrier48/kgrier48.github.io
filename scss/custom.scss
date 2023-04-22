@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;1,500&display=swap');
-$font-headings: 'Barlow Condensed', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+$font-headings: 'Poppins', sans-serif; 
 $font-body: 'Helvetica', sans-serif;
-$white: #FFFBED;
+$white: #FAFAFA;
 $green: #1B311E;
 $blue100: #011638;
 $blue75: #0F69FA;
+$gray75: #C2C2C2;
+$gray100: #262626;
 
 
 .yellow{ color: #FFD233 !important; text-decoration: none !important; }
@@ -15,7 +17,6 @@ $blue75: #0F69FA;
 %heading { 
     font-family: $font-headings;
     color: $white !important;
-    text-transform: uppercase;
     .outline {
         color: $blue100;
         -webkit-text-stroke-width: 2px;
@@ -83,8 +84,7 @@ footer a { color: #232222 !important;}
 
 .fs-feature {
     font-size: calc(6rem + 0.3vw) !important;
-    line-height: 6rem;
-    text-transform: uppercase;
+    line-height: 7rem;
 }
 
 .btn-primary { 
@@ -133,7 +133,7 @@ footer a { color: #232222 !important;}
 }
 
 #hero{
-    min-height: 300px;
+    min-height: 80vh;
 }
 
 #lanesend {
@@ -197,3 +197,23 @@ footer a { color: #232222 !important;}
     top: 0;
     width: 100%;
   }
+
+.about-history {
+    margin-top: 6rem;
+}
+
+.about-row>* {
+    flex: 1;
+    margin-right: 2.4rem;
+}
+
+.about-row {
+    border-bottom: 1px solid $gray75;
+    padding-bottom: .125rem;
+    margin-bottom: 1rem;
+}
+
+.about-item-end {
+    margin-right: 0px;
+    text-align: right;
+}
