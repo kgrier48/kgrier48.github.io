@@ -60,13 +60,6 @@ a {
     }
 }
 
-a.text-link {
-    color: #FFD233 !important;
-    &:hover{
-        color: #D8A800 !important;
-    }
-}
-
 button.text-link{
     background: transparent;
     text-decoration: underline !important;
@@ -286,6 +279,13 @@ nav .offcanvas {
     @media screen and (min-width: 992px){
         border-right: 1px solid $blue100;
     }
+    &:hover{
+        background-color: $blue100;
+        h4, a, span, p {
+            color: $yellow100 !important;
+            text-decoration: none !important;
+        }
+    }
 }
 
 .work_item.work_item_end {
@@ -294,6 +294,6 @@ nav .offcanvas {
 }
 
 
-footer a{
-    color: $yellow100;
+footer .nav-link, .text-link{
+    color: $yellow100 !important;
 }

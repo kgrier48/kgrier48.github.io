@@ -63,13 +63,6 @@ a:hover {
   color: black;
 }
 
-a.text-link {
-  color: #FFD233 !important;
-}
-a.text-link:hover {
-  color: #D8A800 !important;
-}
-
 button.text-link {
   background: transparent;
   text-decoration: underline !important;
@@ -11891,14 +11884,21 @@ nav .offcanvas .nav-link {
     border-right: 1px solid #011638;
   }
 }
+.work_item:hover {
+  background-color: #011638;
+}
+.work_item:hover h4, .work_item:hover .h4, .work_item:hover a, .work_item:hover span, .work_item:hover p {
+  color: #DAA520 !important;
+  text-decoration: none !important;
+}
 
 .work_item.work_item_end {
   border-right: 0px;
   border-bottom: 1px solid #011638;
 }
 
-footer a {
-  color: #DAA520;
+footer .nav-link, .text-link {
+  color: #DAA520 !important;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
