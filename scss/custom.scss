@@ -60,6 +60,10 @@ a {
     }
 }
 
+li {
+    padding-bottom: 1rem;
+}
+
 button.text-link{
     background: transparent;
     text-decoration: underline !important;
@@ -212,6 +216,15 @@ nav .offcanvas {
   'opsz' 48
 }
 
+.material-symbols-rounded {
+    font-size: 2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
 .material-symbols-sharp.small {
     font-size: 24px;
     font-variation-settings:
@@ -219,6 +232,15 @@ nav .offcanvas {
     'wght' 400,
     'GRAD' 0,
     'opsz' 24
+  }
+
+  .material-symbols-rounded.small {
+    font-size: 1.5rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
   }
 
   .iframe-container{
@@ -296,4 +318,8 @@ nav .offcanvas {
 
 footer .nav-link, .text-link{
     color: $yellow100 !important;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
 }
