@@ -11919,4 +11919,33 @@ html.sr .load-hidden {
   visibility: hidden;
 }
 
+.dropdown-menu {
+  background-color: #DAA520;
+  color: #011638;
+}
+.dropdown-menu li {
+  border-bottom: 1px solid #011638;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.dropdown-menu li:last-child {
+  border-bottom: 0px;
+}
+
+.dropdown-menu.show {
+  transform: translate3d(0px, 48px, 0px) !important;
+}
+
+.desktop-timeline {
+  height: 480px;
+  overflow-y: scroll;
+}
+.desktop-timeline img {
+  height: 100%;
+}
+
+.timeline {
+  background-color: #00112C;
+}
+
 /*# sourceMappingURL=portfolio.css.map */
