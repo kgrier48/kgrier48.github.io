@@ -89,7 +89,7 @@
   <!-- END NAVIGATION -->
 
       <section id="hero" class=" bg-image container-fluid py-5 px-4 px-lg-5">
-        <h1 class="fs-feature pt-5 pb-3"> <span class="yellow">Ken Grier – </span><br>Sr. Product Designer & UX Manager based in Pittsburgh</h1>
+        <h1 class="fs-feature pt-5 mt-5 pb-3"> <span class="yellow">Ken Grier – </span><br>Sr. Product Designer & UX Manager based in Pittsburgh</h1>
         <div class="justify-content-md-start pb-5">
           <a class="btn btn-primary btn-md me-2" href=" resume.html">View Resume</a>
           <a class="btn btn-secondary dark-bg btn-md" href="#work">View Projects</a>
@@ -205,8 +205,8 @@
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
-                document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementById("mobile_nav")[0].classList.add(className);
+                document.getElementsByTagName("nav")[0].classList.remmove(className);
+                document.getElementByClassName("mobile_nav")[0].classList.remove(className);
               }
             };
         </script>

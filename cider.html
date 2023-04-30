@@ -36,7 +36,7 @@
       <a class="btn btn-primary btn-md ms-2 d-flex" href="KenResume_2023Rev.pdf" target="_blank">Download Resume <span class="ms-1 black material-symbols-rounded small">download</span></a>
     </div>
 </nav>
-<nav id="mobile" class="mobile-nav container-fluid d-flex d-md-none justify-content-center position-fixed top-0 p-3">
+<nav id="mobile" class="mobile_nav container-fluid d-flex d-md-none justify-content-center position-fixed top-0 p-3">
   <div class="d-flex align-items-center ms-2 mb-3 mb-md-0 me-auto text-dark text-decoration-none">
     <a href="index.html"><img class="logo" style="max-width: 48px;" src="img/icons/logo_white.png"/></a>
   </div>
@@ -133,14 +133,14 @@
         var scrollTrigger = 60;
 
         window.onscroll = function() {
-          if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
-            document.getElementsByTagName("nav")[0].classList.add(className);
-            document.getElementsByClassName("mobile_nav")[0].classList.add(className);
-          } else {
-            document.getElementsByTagName("nav")[0].classList.add(className);
-            document.getElementById("mobile_nav")[0].classList.add(className);
-          }
-        };
+              if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("nav")[0].classList.add(className);
+                document.getElementsByClassName("mobile_nav")[0].classList.add(className);
+              } else {
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+                document.getElementByClassName("mobile_nav")[0].classList.remove(className);
+              }
+            };
     </script>
 </body>
 </html>
