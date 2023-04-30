@@ -11696,8 +11696,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav-link.active {
+.nav-link {
+  font-family: "Poppins", sans-serif;
+}
+.nav-link .active {
   color: #DAA520;
+}
+
+.dropdown-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 nav .offcanvas {
@@ -11705,6 +11713,7 @@ nav .offcanvas {
 }
 nav .offcanvas .nav-link {
   color: #FAFAFA;
+  font-family: "Poppins", sans-serif;
 }
 
 .fs-feature {
@@ -11941,6 +11950,7 @@ nav .offcanvas .nav-link {
 
 footer .nav-link, .text-link {
   color: #DAA520 !important;
+  font-family: "Poppins", sans-serif;
 }
 
 html.sr .load-hidden {
