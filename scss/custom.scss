@@ -130,7 +130,7 @@ nav .offcanvas {
 }
 
 .btn-secondary.dark-bg {
-    background-color: $blue100;
+    background-color: transparent;
     border: 1px solid $yellow100;
     font-weight: 500 !important;
     color: $yellow100;
@@ -179,8 +179,6 @@ nav .offcanvas {
     min-height: 80vh;
 }
 
-<<<<<<< Updated upstream
-=======
 #hero.bg-image{
     background: linear-gradient(0deg, rgba(1, 22, 56, 1), rgba(1, 22, 56, 0.9)), url(../img/NPS/Teton.jpg);
     -webkit-background-size: cover;
@@ -191,7 +189,6 @@ nav .offcanvas {
     min-height: 600px;
 }
 
->>>>>>> Stashed changes
 #lanesend {
     background: linear-gradient(0deg, rgba(1, 22, 56, 1), rgba(1, 22, 56, 0.94)), url('../img/honorcode_confirmation_2.gif');
     -webkit-background-size: cover;
