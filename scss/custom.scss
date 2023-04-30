@@ -287,6 +287,10 @@ nav .offcanvas {
     padding-bottom: .125rem;
     margin-bottom: 1rem;
     flex-wrap: wrap!important;
+    flex-direction: column;
+    @media  screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .about-item-end {

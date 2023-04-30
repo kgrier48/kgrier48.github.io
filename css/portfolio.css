@@ -11886,6 +11886,12 @@ nav .offcanvas .nav-link {
   padding-bottom: 0.125rem;
   margin-bottom: 1rem;
   flex-wrap: wrap !important;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .about-row {
+    flex-direction: row;
+  }
 }
 
 .about-item-end {
