@@ -11772,6 +11772,13 @@ nav .offcanvas .nav-link {
   border-radius: 4px;
 }
 
+.iframe-card {
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
+}
+
 .transition-sm {
   margin-top: -40px;
 }
@@ -11908,6 +11915,7 @@ nav .offcanvas .nav-link {
   min-height: 300px;
   border-right: 0px;
   border-bottom: 1px solid #011638;
+  text-decoration: none;
 }
 .work_item h4, .work_item .h4, .work_item a, .work_item span, .work_item p {
   color: #011638 !important;
