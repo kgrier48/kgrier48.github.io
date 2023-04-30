@@ -179,6 +179,19 @@ nav .offcanvas {
     min-height: 80vh;
 }
 
+<<<<<<< Updated upstream
+=======
+#hero.bg-image{
+    background: linear-gradient(0deg, rgba(1, 22, 56, 1), rgba(1, 22, 56, 0.9)), url(../img/NPS/Teton.jpg);
+    -webkit-background-size: cover;
+    background-blend-mode: multiply;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+>>>>>>> Stashed changes
 #lanesend {
     background: linear-gradient(0deg, rgba(1, 22, 56, 1), rgba(1, 22, 56, 0.94)), url('../img/honorcode_confirmation_2.gif');
     -webkit-background-size: cover;
