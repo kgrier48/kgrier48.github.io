@@ -90,8 +90,8 @@
 <!-- END NAVIGATION -->
 
       <section id="quoting" class="ccontainer-fluid d-flex align-items-center text-left yellow-bg g-0">
-        <div class="container px-5 py-5 blue">
-            <h1 class="fs-feature">Manufacturing Marketplace</h1>
+        <div class="container px-5 py-5 mt-5 blue">
+          <h1 class="fs-feature">Quoting Marketplace</h1>
             <p class="col-12 col-md-8 mb-5">Building a two-sided marketplace for industrial buyers to work with manufacturing suppliers. This project spanned implementation across two distinct platforms, with two individual project launches.</p>
             <p>Responsibilities Included: Design Lead, Product Management, Illustration</p>
             <a class="btn btn-secondary light-bg btn-md ms-2" target="_blank" href="https://www.figma.com/proto/9mtpxV7YaW46DLeS8JsSqu/Portfolio-Pieces?page-id=0%3A1&node-id=1-2&viewport=632%2C525%2C0.22&scaling=contain&starting-point-node-id=1%3A2">View Case Study</a>
@@ -100,7 +100,7 @@
 
       <section class="container px-5 py-5 my-5">
           <section class="row row-cols-1 row-cols-xl-2">
-            <div class="col pb-5 my-5 pe-5">
+            <div class="col pb-lg-5 my-5 pe-lg-5">
               <h3 class="fs-5 yellow">Foundations</h3>
               <h4 class="fs-1">The Business Problem</h4>
               <p>While the traditional business of Xometry held, instant quote as much as possible, the business continued to search for a silver bullet that would solve instances where an instant quote wouldn’t work.</p>
@@ -150,7 +150,7 @@
           </div>
         </section>
       </section>
-      <section id="timeline" class="container-fluid py-5 timeline text-center">
+      <section id="timeline" class="container-fluid py-5 timeline text-lg-center">
         <section class="row my-5">
           <div class="col-10 col-lg-6 mx-auto">
             <h3 class="fs-5 yellow">Discovery and Design</h3>
@@ -163,9 +163,9 @@
         </section>
       <section class="container py-5 my-5">
         <section class="row pb-5">
-          <div class="col-12 col-lg-4 pt-5 pe-5">
+          <div class="col-12 col-lg-4 px-5 pt-5 pe-lg-5">
             <h3 class="fs-5 yellow">Product Launch</h3>
-            <h4 class="fs-1">Launching the Manufacting Marketplace</h4>
+            <h4 class="fs-1">Launching the Quoting Marketplace</h4>
             <p>The new experience we intended to launch coincided with updates to the core business model. To begin, we performed a soft launch and sought feedback from our early users. Once we’re able to debug our experience, we launched the Industrial Quoting on Xometry to the greater finishing and custom manufacturer audience.</p>
           </div>
           <div class="col col-12 col-lg-8 pb-5">
@@ -267,10 +267,13 @@
             window.onscroll = function() {
               if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
+<<<<<<< Updated upstream
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementByClassName("mobile_nav")[0].classList.add(className);
+=======
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+>>>>>>> Stashed changes
               }
             };
         </script>

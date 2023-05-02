@@ -11722,8 +11722,8 @@ nav .offcanvas .btn-primary {
 }
 
 .fs-feature {
-  font-size: calc(3rem + 0.3vw) !important;
-  line-height: 4rem;
+  font-size: calc(2.5rem + 0.3vw) !important;
+  line-height: 3rem;
 }
 @media screen and (min-width: 768px) {
   .fs-feature {
@@ -11792,8 +11792,8 @@ nav .offcanvas .btn-primary {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 600px;
   border-radius: 1rem;
+  height: 340px;
   transition: 1s background ease;
 }
 .hover-image-link:hover {

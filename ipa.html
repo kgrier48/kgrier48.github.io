@@ -89,7 +89,7 @@
 <!-- END NAVIGATION -->
 
       <section id="ipa" class="container-fluid d-flex align-items-center text-left py-5">
-        <div id="home-header" class="container py-5">
+        <div id="home-header" class="container py-5 mt-5">
             <h1 class="fs-feature">IPA Can Series</h1>
             <p class="col-12 col-md-8 mb-5">As the illustrator and designer for a series of label designs for a brewery, I was responsible for creating visually appealing and cohesive designs that effectively communicated the branding and messaging of the brewery.</p>
             <p class="gray">Responsibilities Included: Illsutration, Art Direction</p>
@@ -177,10 +177,13 @@
             window.onscroll = function() {
               if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
+<<<<<<< Updated upstream
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementByClassName("mobile_nav")[0].classList.add(className);
+=======
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+>>>>>>> Stashed changes
               }
             };
         </script>

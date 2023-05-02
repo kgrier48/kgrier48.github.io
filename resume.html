@@ -227,10 +227,13 @@
         window.onscroll = function() {
               if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
+<<<<<<< Updated upstream
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementByClassName("mobile_nav")[0].classList.add(className);
+=======
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+>>>>>>> Stashed changes
               }
             };
     </script>

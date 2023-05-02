@@ -91,7 +91,7 @@
 <!-- END NAVIGATION -->
 
   <section id="loft" class="container-fluid d-flex align-items-center text-left yellow-bg g-0">
-    <div class="container px-5 py-5">
+    <div class="container px-5 mt-5 py-5">
         <h1 class="fs-feature pt-5 blue">Loft Design System</h1>
         <p class="col-12 col-md-8 mb-5 blue">As a design lead for a design system, my role involves maintaining and improving the system to ensure that it is effective and efficient for designers and developers. This includes defining design standards, creating and updating design assets and components, and collaborating with cross-functional teams to ensure that the design system is consistently applied across the organization.</p>
         <p class="blue">Responsibilities Included: Design Lead, Product Management, Art Direction</p>
@@ -257,10 +257,13 @@
               window.onscroll = function() {
               if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
                 document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
+<<<<<<< Updated upstream
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementByClassName("mobile_nav")[0].classList.add(className);
+=======
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+>>>>>>> Stashed changes
               }
             };
           </script>
