@@ -11786,30 +11786,36 @@ nav .offcanvas .btn-primary {
   border-radius: 4px;
 }
 
-.hover-image-link {
+.lanes-end {
   background: linear-gradient(0deg, rgba(1, 22, 56, 0.1), rgba(1, 22, 56, 0.3)), url("../img/LE_Homepage.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   border-radius: 1rem;
-  height: 340px;
   transition: 1s background ease;
 }
-.hover-image-link:hover {
+.lanes-end:hover {
   background: linear-gradient(0deg, rgb(1, 22, 56), rgba(1, 22, 56, 0.94)), url("../img/LE_Homepage.png");
 }
-.hover-image-link:hover .overlay {
+.lanes-end:hover .overlay {
   opacity: 1;
 }
-.hover-image-link .overlay {
+.lanes-end .overlay {
   transition: 1s ease;
   opacity: 0;
   text-align: center;
 }
 
-.iframe-card {
-  border-radius: 1rem;
+.ratio16-9 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-styling {
+  border-radius: 0.3rem;
   -webkit-box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.75);
@@ -11894,12 +11900,6 @@ nav .offcanvas .btn-primary {
 .material-symbols-rounded.small {
   font-size: 1.5rem;
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
-}
-
-.iframe-container {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
 }
 
 .iframe-container iframe {

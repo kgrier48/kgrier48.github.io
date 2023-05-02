@@ -166,14 +166,13 @@ nav .offcanvas {
 
 .badge.badge-primary { color:#232222; background-color: #FFD233; border: 1px solid #D8A800; border-radius: 4px;}
 
-.hover-image-link{
+.lanes-end{
     background: linear-gradient(0deg, rgba(1, 22, 56, .1), rgba(1, 22, 56, .3)), url('../img/LE_Homepage.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border-radius: 1rem;
-    height: 340px;
     transition: 1s background ease;
     &:hover{
         background: linear-gradient(0deg, rgba(1, 22, 56, 1), rgba(1, 22, 56, 0.94)), url('../img/LE_Homepage.png');
@@ -188,10 +187,15 @@ nav .offcanvas {
     }
 }
 
+.ratio16-9 {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
 
-
-.iframe-card { 
-    border-radius: 1rem; 
+.card-styling{ 
+    border-radius: .3rem; 
     -webkit-box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
@@ -297,11 +301,7 @@ nav .offcanvas {
     'opsz' 48
   }
 
-  .iframe-container{
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-  }
+
 
   .iframe-container iframe{
     border: 0;
