@@ -182,8 +182,8 @@
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
-                document.getElementsByTagName("nav")[0].classList.add(className);
-                document.getElementByClassName("mobile_nav")[0].classList.add(className);
+                document.getElementsByTagName("nav")[0].classList.remove(className);
+                document.getElementByClassName("mobile_nav")[0].classList.remove(className);
               }
             };
           </script>

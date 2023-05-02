@@ -46,8 +46,16 @@ nav.scrolled {
   font-size: 12px;
 }
 
+.blue-bg {
+  background-color: #011638 !important;
+}
+
+.white-bg {
+  background-color: #FAFAFA !important;
+}
+
 .yellow-bg {
-  background-color: #DAA520;
+  background-color: #DAA520 !important;
 }
 
 .yellow {
@@ -11990,15 +11998,19 @@ html.sr .load-hidden {
 }
 .dropdown-menu li {
   border-bottom: 1px solid #011638;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .dropdown-menu li:last-child {
   border-bottom: 0px;
 }
+.dropdown-menu a {
+  padding: 12px 16px;
+}
 
 .dropdown-menu.show {
   transform: translate3d(0px, 48px, 0px) !important;
+  padding: 0px;
 }
 
 .desktop-timeline {
