@@ -49,9 +49,7 @@ nav{
     font-size: 12px;
 }
 
-.blue-bg { background-color:  $blue100 !important;}
-.white-bg { background-color: $white !important;}
-.yellow-bg{ background-color: $yellow100 !important;}
+.yellow-bg{ background-color: $yellow100;}
 .yellow{ color: $yellow100 !important; text-decoration: none !important; }
 .blue { color: $blue100 !important;}
 
@@ -391,20 +389,16 @@ html.sr .load-hidden {
     color: $blue100;
     li {
         border-bottom: 1px solid $blue100;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
     }
     li:last-child{
         border-bottom: 0px;
-    }
-    a {
-        padding: 12px 16px;
     }
 }
 
 .dropdown-menu.show{
     transform: translate3d(0px, 48px, 0px) !important;
-    padding: 0px;
 }
 
 .desktop-timeline{

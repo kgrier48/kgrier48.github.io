@@ -147,14 +147,7 @@
               View IPA Can Series <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
             </span>
           </a>
-          <!--
-          <a class="work_item col py-5 px-5" href="additionalwork.html">
-            <h4 class="fs-1">Additional Design Work</h4>
-            <span class="d-inline-flex align-items-center"> 
-              View Additional Design Work <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
-            </span>
-          </a>  -->
-        <div class="work_item col py-5 px-5 work_item_end">
+        <div class="work_item col py-5 px-5">
           <h4 class="fs-1">Partner Navigation System</h4>
           <p><i>Coming Soon!</i></p>
         </div>
@@ -212,7 +205,7 @@
                 document.getElementsByTagName("nav")[0].classList.add(className);
                 document.getElementsByClassName("mobile_nav")[0].classList.add(className);
               } else {
-                document.getElementsByTagName("nav")[0].classList.remove(className);
+                document.getElementsByTagName("nav")[0].classList.remmove(className);
                 document.getElementByClassName("mobile_nav")[0].classList.remove(className);
               }
             };
