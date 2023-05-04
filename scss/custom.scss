@@ -50,16 +50,9 @@ nav{
 }
 
 .yellow-bg{ background-color: $yellow100;}
-.yellow{ color: $yellow100 !important; text-decoration: none !important; }
+.yellow{ color: $yellow100 !important;}
 .blue { color: $blue100 !important;}
 
-a {
-    color: black;
-    font-weight: 500;
-    &:hover{
-        color: black;
-    }
-}
 
 li {
     padding-bottom: 1rem;
@@ -86,6 +79,10 @@ footer a { color: #232222 !important;}
     font-family: $font-headings;
     .active{
         color: $yellow100
+    }
+    &:hover{
+        text-decoration: underline;
+        opacity: .66;
     }
 }
 
@@ -387,18 +384,33 @@ html.sr .load-hidden {
 .dropdown-menu{
     background-color: $yellow100;
     color: $blue100;
+    
     li {
         border-bottom: 1px solid $blue100;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding: 0;
+        a {
+            padding: 1rem 1.33rem;
+            &:hover{
+                background-color: $blue125;
+                color: $yellow100;
+            }
+        }
     }
     li:last-child{
         border-bottom: 0px;
+        border-radius: 0 0 4px 4px;
+    }
+    li:first-child{
+        border-radius: 4px 4px 0 0;  
     }
 }
 
 .dropdown-menu.show{
+    padding: 0px;
     transform: translate3d(0px, 48px, 0px) !important;
+    -webkit-box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 16px -2px rgba(0,0,0,0.75);
 }
 
 .desktop-timeline{
