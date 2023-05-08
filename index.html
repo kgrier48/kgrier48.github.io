@@ -9,6 +9,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="https://unpkg.com/scrollreveal"></script>
       <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
@@ -99,7 +100,7 @@
       <section id="about" class="yellow-bg container-fluid  py-5 px-5">
         <div class="row py-5">
           <div class="col-12 col-lg-4">
-            <h2 class="fs-1 pb-3 blue">Product and UX Designer, devoted to empower
+            <h2 class="fs-1 pb-3 scrollreveal-list blue">Product and UX Designer, devoted to empower
               and inspire others through digtal experiences.</h2>
             <div class="justify-content-md-start">
               <a class="ml-5 btn btn-secondary light-bg btn-md" href="resume.html">View Full Experience</a>
@@ -109,11 +110,11 @@
           <div class="col-12 col-lg-7 col-xl-6 mx-auto">
             <p class="fs-5 pt-5 pt-lg-0"> With 8+ years of learning and evolution in the digital landscape, I am in love with the process of creating solutions for real user problems. Empowering the average user to accomplish things they never believed to be possible. </p>
             <div class="about-history fs-5">
-              <div class="about-row d-flex"><span class="about-item">Xometry</span><span class="about-item">Manager, UX Design</span><span class="about-item-end">2022 – Present</span></div>
-              <div class="about-row d-flex"><span class="about-item">Xometry</span><span class="about-item">Sr. Product Designer</span><span class="about-item-end">2021 – 2022</span></div>
-              <div class="about-row d-flex"><span class="about-item">Xometry</span><span class="about-item">Product Designer</span><span class="about-item-end">2019 – 2021</span></div>
-              <div class="about-row d-flex"><span class="about-item">Cornett</span><span class="about-item">Assoc. Art Director</span><span class="about-item-end">2019</span></div>
-              <div class="about-row d-flex"><span class="about-item">Cornett</span><span class="about-item">Interactive Designer</span><span class="about-item-end">2015 – 2019</span></div>         
+              <div class="about-row d-flex scrollreveal-list"><span class="about-item">Xometry</span><span class="about-item">Manager, UX Design</span><span class="about-item-end">2022 – Present</span></div>
+              <div class="about-row d-flex scrollreveal-list"><span class="about-item">Xometry</span><span class="about-item">Sr. Product Designer</span><span class="about-item-end">2021 – 2022</span></div>
+              <div class="about-row d-flex scrollreveal-list"><span class="about-item">Xometry</span><span class="about-item">Product Designer</span><span class="about-item-end">2019 – 2021</span></div>
+              <div class="about-row d-flex scrollreveal-list"><span class="about-item">Cornett</span><span class="about-item">Assoc. Art Director</span><span class="about-item-end">2019</span></div>
+              <div class="about-row d-flex scrollreveal-list"><span class="about-item">Cornett</span><span class="about-item">Interactive Designer</span><span class="about-item-end">2015 – 2019</span></div>         
             </div>
           </div>
         </div>
@@ -124,31 +125,31 @@
           <h2 class="fs-feature blue px-5 py-5"> Selected Projects  <br> 2015 - Present </h2>
         </section>
         <section class="row row-cols-1 row-cols-lg-3">
-          <a class="work_item col py-5 px-5" href="loft.html">
+          <a class="work_item col py-5 px-5 scrollreveal-list" href="loft.html">
               <h4 class="fs-1">Loft Design System</h4>
               <span class="d-inline-flex align-items-center"> 
                 View Loft Design System <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
               </span>
             </a>
-          <a class="work_item col py-5 px-5" href="quoting.html">
+          <a class="work_item col py-5 px-5 scrollreveal-list" href="quoting.html">
             <h4 class="fs-1">Quoting Marketplace</h4>
             <span class="d-inline-flex align-items-center">
                 View Quoting Marketplace <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
             </span>
           </div>
-          <a class="work_item work_item_end col py-5 px-5" href="lanesend.html">
+          <a class="work_item work_item_end col py-5 px-5 scrollreveal-list" href="lanesend.html">
             <h4 class="fs-1">Lane’s End Experience</h4>
             <span class="d-inline-flex align-items-center">
                 View Lane’s End Experience <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
             </span>
           </a>
-          <a class="work_item col py-5 px-5" href="ipa.html">
+          <a class="work_item col py-5 px-5 scrollreveal-list" href="ipa.html">
             <h4 class="fs-1">IPA Can Series</h4>
             <span class="d-inline-flex align-items-center"> 
               View IPA Can Series <span class="ms-2 material-symbols-rounded small">arrow_right_alt</span>
             </span>
           </a>
-        <div class="work_item col py-5 px-5">
+        <div class="work_item col py-5 px-5 scrollreveal-list">
           <h4 class="fs-1">Partner Navigation System</h4>
           <p><i>Coming Soon!</i></p>
         </div>
@@ -210,6 +211,9 @@
                 document.getElementByClassName("mobile_nav")[0].classList.remove(className);
               }
             };
+
+            ScrollReveal().reveal('.headline');
+            ScrollReveal().reveal('.scrollreveal-list', { interval: 100 }, { easing: 'ease-in' });
         </script>
     </body>
 </html>

@@ -113,22 +113,22 @@
             </div>
         </section>
          <section class="row row-cols-1 row-cols-md-2 g-5 px-5 pb-5 mb-5">
-          <div class="col pb-3">
+          <div class="col pb-3 scrollreveal-list">
             <span class="material-symbols-rounded yellow">person_search</span>
             <h4>User Discovery</h4>
             <p>Customer research for the Lane’s End Farm Redesign ranged from prospective breeders, and experienced high-end horse farm owners in the industry. We let this feedback guide our design direction and information hierarchy throughout the design and build.</p>
          </div>
-          <div class="col pb-3">
+          <div class="col pb-3 scrollreveal-list">
             <span class="material-symbols-rounded yellow">tune</span>
             <h4>Information Heriarchy</h4>
             <p>Users coming to Lane's End often have a very specific set of expectations and a mental model of what Lane's End Farm represents in the horse racing industry. Because of this, we needed to focus in on presenting a clear, decluttered architecture and hierarchy that allows a user to clearly and directly navigate to specific offerings.</p>
           </div>
-          <div class="col pb-3">
+          <div class="col pb-3 scrollreveal-list">
             <span class="material-symbols-rounded yellow">design_services</span>
             <h4>Design</h4>
             <p>Working closely with a Creative Director, we worked together to build a luxurious, clean, and purposeful experience. We wanted users coming to the site, to feel a professionalism unmatched in the industry.</p>         
           </div>
-          <div class="col pb-3">
+          <div class="col pb-3 scrollreveal-list">
             <span class="material-symbols-rounded yellow">terminal</span>
             <h4>Front-End Development</h4>
             <p>Given the small team alloted to work on this project, I worked closely with Project Management, and the Backend Development team to take responsibility of the front-end development. This allowed us to refine and create a unique experience to stand out amongst other industry competitors.</p>         
@@ -138,7 +138,7 @@
 
     <section class="container-fluid scrollreveal-list py-5 mt-5 timeline">
       <div class="col-12 col-md-10 col-lg-8 mx-auto pb-5">
-        <img class="img-fluid card-styling transition-lg" src="img/2023_portfolio/LE_ScreenAnimation.gif"/> 
+        <img class="img-fluid card-styling transition-lg scrollreveal-list" src="img/2023_portfolio/LE_ScreenAnimation.gif"/> 
       </div>
     </section>
 
@@ -200,6 +200,9 @@
                 document.getElementsByTagName("nav")[0].classList.remove(className);
               }
             };
+
+            ScrollReveal().reveal('.headline');
+            ScrollReveal().reveal('.scrollreveal-list', { interval: 100 }, { easing: 'ease-in' });
           </script>
 </body>
 </html>
