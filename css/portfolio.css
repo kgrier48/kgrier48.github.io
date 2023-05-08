@@ -11788,6 +11788,7 @@ nav .offcanvas .btn-primary {
   -o-background-size: cover;
   background-size: cover;
   border-radius: 1rem;
+  background-blend-mode: multiply;
   transition: 1s background ease;
 }
 .lanes-end:hover {
@@ -11824,6 +11825,10 @@ nav .offcanvas .btn-primary {
   margin-top: -80px;
 }
 
+.transition-lg {
+  margin-top: -120px;
+}
+
 .canlayout {
   display: flex;
   flex-direction: row;
@@ -11856,6 +11861,7 @@ nav .offcanvas .btn-primary {
   -o-background-size: cover;
   background-size: cover;
   min-height: 600px;
+  background-blend-mode: multiply;
 }
 
 #ipa {
